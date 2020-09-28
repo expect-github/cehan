@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_13dp"
+    android:layout_marginRight="@dimen/commom_13dp"
+    android:background="@drawable/public_bg_shadow">
+
+    <ImageView
+        android:id="@+id/iv_coupon"
+        android:layout_width="@dimen/commom_16dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:src="@drawable/assemble_ic_coupon"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="85dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/commom_5dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupon"
+        app:layout_goneMarginTop="@dimen/commom_15dp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:textSize="@dimen/commom_15sp"
+        android:id="@+id/tv_book_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#FF20242A"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cl_join_persons"
+        app:layout_constraintStart_toEndOf="@+id/iv_cover"
+        app:layout_constraintTop_toTopOf="@+id/iv_cover"
+        app:layout_goneMarginEnd="5dp"
+        tools:text="你知道有个地方，是你向往的地方吗这一本书
+" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_book_name"
+        tools:text="奥斯特洛夫斯基" />
+
+    <TextView
+        android:id="@+id/tv_assemble_number"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/commom_16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/assemble_shap_assemble_number"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#FFEE1F1F"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_author"
+        app:layout_constraintTop_toBottomOf="@+id/tv_author"
+        tools:text="2人团" />
+
+
+    <include
+        layout="@layout/assemble_layout_join_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/commom_10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_book_name" />
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cover" />
+
+    <include
+        layout="@layout/assemble_layout_go_buy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/commom_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_assemble_number"
+        tools:layout_editor_absoluteY="100dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

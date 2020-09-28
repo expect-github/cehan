@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_13dp"
+    android:layout_marginRight="@dimen/commom_13dp"
+    android:background="@drawable/public_bg_shadow">
+    <ImageView
+
+        android:visibility="visible"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:id="@+id/iv_coupon"
+        android:layout_width="@dimen/commom_16dp"
+        android:layout_height="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/assemble_ic_coupon"
+       />
+
+    <com.nj.baijiayun.module_public.widget.CourseTitleView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/commom_15dp"
+        app:layout_goneMarginTop="@dimen/commom_12dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:textColor="@color/public_D9000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupon"
+        tools:text="告别996 实现高效编程 减少你压" />
+
+
+    <include
+        android:id="@+id/public_include3"
+        layout="@layout/public_layout_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_name" />
+
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginTop="@dimen/commom_20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/public_include3"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="@dimen/commom_50dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintEnd_toEndOf="@+id/iv_1"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/iv_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_1"
+        tools:text="好老师" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintStart_toEndOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/iv_2"
+        app:layout_constraintStart_toStartOf="@+id/iv_2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_2"
+        tools:text="何新2222" />
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_2"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="@dimen/commom_50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/iv_3"
+        app:layout_constraintStart_toStartOf="@+id/iv_3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_3"
+        tools:text="商文海" />
+
+
+
+
+    <include
+        layout="@layout/assemble_layout_join_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_1" />
+
+    <include
+
+        android:id="@+id/split_line"
+        layout="@layout/common_layout_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/commom_1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+    <include
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        layout="@layout/assemble_layout_go_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_marginBottom="@dimen/commom_10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/split_line"
+        app:layout_constraintStart_toStartOf="@+id/split_line"
+        app:layout_constraintTop_toBottomOf="@+id/split_line" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

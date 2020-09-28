@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="403dp"
+    android:background="@drawable/public_bg_dialog_new_bottom"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/iv_close"
+        android:paddingTop="14.5dp"
+        android:paddingRight="14.5dp"
+        android:paddingLeft="@dimen/commom_8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete_baidu" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/commom_30dp"
+        android:text="优惠券"
+        android:textColor="#ff262626"
+        android:textSize="17sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:layout_width="@dimen/commom_13dp"
+            android:layout_height="@dimen/commom_13dp"
+            android:src="@drawable/public_ic_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commom_3dp"
+            android:text="@string/public_coupon_rule"
+            android:textColor="#ff8c8c8c"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

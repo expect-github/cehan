@@ -1,0 +1,56 @@
+base包下：
+    BaseAppActivity
+         默认使用ActionBar作为标题栏 所以需要有ActionBar主题，如果不使用ActionBar主题，自己需要加一个自己实现的头部
+
+         needMultipleStatus 是否需要多状态布局
+         bindLayout 绑定基础多状态布局，如果不需要，可以直接覆盖这个布局
+         bindContentViewLayoutId  默认情况下通常自己需要实现的布局
+
+    BaseAppMultipleActivity
+        用于有多个tab的Activity
+
+    BaseAppFragmentActivity
+        基础webView Fragment
+
+    BaseEmptyContract  BaseEmptyPresenter
+        用来占位
+        由于dragger  fragment注入 必须依赖activity,
+        当你的activity 的不需要注入功能presenter的时候 用空的占位
+
+
+    BaseAppFragment
+        常用方法:
+            onLazyInitView 在这个方法做懒加载
+            bindLayout 默认实现了绑定多状态布局
+            bindContentViewLayoutId 通常自己需要实现
+
+
+
+    BaseAppFragmentActivity 快速实现带有fragment的Activity
+
+
+
+    BaseListResponse,BaseResponse 基础的返回实体，可以加上实体范型
+
+    BaseObserver 基础的返回Observer,有做判断返回，是否需要重写登录等
+
+helper包下:
+    ToolBarHelper 用于快速给状态栏添加文字图片等
+    IndicatorHelper 指示器默认构建
+
+mvp包下:
+    MultiStateView 多状态基础baseView
+    BasePresenter 里面有takeView绑定BaseView  dropView解绑baseView
+
+temple包下:
+    AbstractListFragment 用来快速构建列表
+    AbstractListPresenter 快速构建分页的presenter
+    IMultiRecyclerView 属于baseView,列表页面的view层
+
+
+di包下:
+    base下用来返回retrofit对应
+    @Qualifier 这样的注解用来区分相同返回类型的对象
+
+
+

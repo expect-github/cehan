@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="@dimen/commom_15dp"
+    android:paddingTop="@dimen/commom_13dp"
+    android:paddingRight="@dimen/commom_15dp"
+    android:paddingBottom="@dimen/commom_15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/course_textview"
+            style="@style/CourseDetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course_detail_title_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.nj.baijiayun.module_common.widget.AppWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/commom_15dp"
+            android:background="@color/chat_teacher_bubble_bg_color"
+            app:layout_constraintStart_toStartOf="@+id/course_textview"
+            app:layout_constraintTop_toBottomOf="@+id/course_textview" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_desc"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:textColor="@color/public_FF262626"-->
+    <!--        android:textSize="14sp"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/course_textview"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/course_textview"-->
+    <!--        tools:text="托福从2017年，Cynthia开始，就已经很受欢迎了时至今日，依然风靡一时，哈哈级。托福2017年，Cynt开始，就已经很受欢迎了，时至今日，依然风靡一时哈哈级。托福从2017。Cynthia开始，就已经很受欢迎时至今日，依然风靡一时，哈哈级。托福从2017年，Chia开始，就已经很受欢迎了，时至今日，依然风靡一时哈哈级。说那些许可证信你看想看老师。">-->
+
+    <!--    </TextView>-->

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:minEms="2"
+            android:layout_marginEnd="13.5dp"
+            android:layout_width="wrap_content"
+            style="@style/PublicForgetPwdTitle"
+            android:text="@string/public_real_name"
+           />
+
+        <EditText
+            android:maxLength="20"
+            android:id="@+id/edit_name"
+            android:inputType="textPersonName"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            style="@style/PublicEditStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/public_real_name_hint"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:background="@color/common_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_1dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_marginEnd="13.5dp"
+            android:layout_width="wrap_content"
+            style="@style/PublicForgetPwdTitle"
+            android:text="@string/public_id_number"
+           />
+
+        <EditText
+            android:maxLength="18"
+            android:id="@+id/edit_id_number"
+            android:inputType="number"
+            android:digits="0123456789xyzXYZ"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            style="@style/PublicEditStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/public_id_number_hint"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:background="@color/common_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_1dp"/>
+
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_confirm"
+        style="@style/PublicButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/common_save" />
+
+
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tv_warning"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:text="@string/public_id_number_input_warning"
+        android:layout_marginBottom="@dimen/commom_35dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

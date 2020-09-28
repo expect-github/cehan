@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply from: '../build_with_extra_res.gradle'
+//def isOpenExtraResBuild = Boolean.valueOf(USE_UPLOAD_RES)
+//def resourcesDir = "resources"
+android {
+    compileSdkVersion androidV.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion androidV.minSdkVersion
+        targetSdkVersion androidV.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        resValue "color", "common_main_color", MAIN_COLOR
+        resValue "color", "common_main_bg", MAIN_BG_COLOR
+        def app_name = APP_NAME
+        println(app_name)
+        resValue "string", "public_app_name", app_name
+
+        
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+
+    }
+
+
+}

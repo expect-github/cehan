@@ -1,0 +1,79 @@
+ext.isUserApplication = false
+
+//版本名称为${conf.versionName}.${conf.versionCode}.${conf.date}" 4.1 14
+def androidVersion = [
+        minSdkVersion      : 19,
+        compileSdkVersion  : 28,
+        buildToolsVersion  : '28.0.3',
+        targetSdkVersion   : 28,
+        sourceCompatibility: JavaVersion.VERSION_1_8,
+        targetCompatibility: JavaVersion.VERSION_1_8,
+        versionCode        : 14,
+//        date               : '1101',
+//        versionName        : "4.1",
+//        applicationId      : "com.baijiayun.zywx",
+        //包路径
+        packageName        : "com.nj.baijiayun"
+]
+
+def bugly =[
+        crash_jar :'3.2.422',
+        crash_ndk :'3.7.5',
+]
+def baijiayun = [
+        imageloader      : '1.0.7',
+        logger           : '1.0.5',
+        refresh          : '1.0.11',
+        downloader       : '1.0.4',
+        annotations      : '1.0.2',
+        compiler         : '1.0.3',
+        push             : '1.0.1',
+        pushCompiler     : '1.0.3',
+        VideoplayerCore  : '2.1.8',
+        VideoplayerUI    : '2.1.0',
+        group_class_ui   : '0.7',
+        liveplayer_sdk_ui: '2.2.2'
+]
+
+def deps = [
+        appcompat_v7     : '28.0.0',
+        recyclerview_v7  : '28.0.0',
+        design           : '28.0.0',
+        multidex         : '1.0.3',
+        constraint_layout: '1.1.3',
+        junit            : '4.12',
+        espressoVersion  : '3.0.2',
+        runner           : '1.0.2',
+        rxandroid        : '2.1.1',
+        rxjava           : '2.2.8',
+        fragmentation    : '1.3.6',
+        rxpermissions    : '0.9.4@aar',
+        imgsel           : '2.0.6',
+        arouter_compiler : '1.1.4',
+        arouter_api      : '1.3.1',
+        banner           : '1.4.10',
+        dagger2Version   : '2.16',
+        flowlayout_lib   : '1.1.2',
+        ninegridimageview: '1.1.1',
+        ijkplayer_java   : '0.8.8',
+        ijkplayer_armv7a : '0.8.8',
+        richtext         : '3.0.7',
+        PhotoView        : '2.1.0',
+        UpdatePlugin     : '2.4',
+        umsdk_analytics  : '8.0.0',
+        MagicIndicator   : '1.5.0',
+        umsdk_common     : '2.0.0',
+        //https://github.com/huanghaibin-dev/CalendarView
+        calendarview     : '3.6.4',
+//        https://github.com/lzyzsd/JsBridge
+        jsbridge         : '1.0.4',
+        gson             : '2.8.5',
+        compressor       : '2.1.0',
+
+
+]
+
+ext.baijiayun = baijiayun
+ext.androidV = androidVersion
+ext.deps = deps
+ext.bugly = bugly

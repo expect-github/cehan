@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/PublicPhoneEditStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:hint="@string/public_phone_hint"
+        android:textSize="@dimen/commom_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="@string/public_pwd"
+        android:textColor="@color/common_main_text_color_title"
+        android:textSize="@dimen/commom_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/edit_phone"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone"/>
+
+    <EditText
+        android:id="@+id/edit_code"
+        style="@style/PublicCodeEditStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/public_code_hint"
+        android:textSize="@dimen/commom_content"
+        app:layout_constraintEnd_toEndOf="@+id/edit_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+    <TextView
+
+        android:id="@+id/tv_auto_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/public_register_auto"
+        android:textColor="@color/public_FFB7B7B7"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintStart_toStartOf="@+id/edit_code"
+        app:layout_constraintTop_toBottomOf="@+id/edit_code"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/public_user_login_line"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_phone"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/public_user_login_line"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_code"/>
+
+    <TextView
+        android:id="@+id/tv_login_by_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/commom_10dp"
+        android:paddingLeft="@dimen/commom_20dp"
+        android:clickable="true"
+        android:text="@string/public_login_by_pwd"
+        android:textColor="@color/public_FF595959"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/edit_code"
+        app:layout_constraintTop_toBottomOf="@+id/edit_code"/>
+
+    <!--<TextView-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/tv_protocol"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/commom_10dp"-->
+    <!--android:text="@string/public_login_protocol"-->
+    <!--android:textColor="@color/public_FF595959"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/tv_auto_register"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/tv_login_by_pwd" />-->
+
+    <include
+        layout="@layout/public_layout_get_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_phone"
+        app:layout_constraintEnd_toEndOf="@+id/edit_phone"
+        app:layout_constraintTop_toTopOf="@+id/edit_phone"/>
+
+    <!--<include-->
+    <!--android:visibility="gone"-->
+    <!--layout="@layout/public_layout_btn_with_shadow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="187dp"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tv_protocol" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_confirm"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:background="@drawable/common_btn_default"-->
+        <!--android:text="@string/confirm"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/commom_14sp"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/tv_login_by_pwd"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/tv_auto_register"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_auto_register"/>-->
+
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/cb_protocol"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:checked="true"-->
+        <!--android:textColor="@color/public_FF595959"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/btn_confirm"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_protocol"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="0dp"-->
+        <!--android:textColor="@color/public_FF595959"-->
+        <!--android:textSize="12sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/cb_protocol"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/cb_protocol"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/cb_protocol"-->
+        <!--tools:text="@string/public_login_protocol"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

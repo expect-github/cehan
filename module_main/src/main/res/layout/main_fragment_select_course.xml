@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_home_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:background="@color/white"
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_bar_view_height" />
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/white" />-->
+
+
+    <LinearLayout
+        android:paddingTop="@dimen/commom_10dp"
+        android:id="@+id/cl_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/select_course_classify"
+            android:paddingLeft="@dimen/commom_15dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分类"
+            android:paddingRight="@dimen/commom_7dp"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/product_list_down"
+            android:textSize="@dimen/commom_14sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/select_course_multiple"
+            android:paddingRight="@dimen/commom_15dp"
+            android:paddingLeft="@dimen/commom_7dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="综合"
+            android:drawableRight="@drawable/product_list_down"
+            android:drawablePadding="@dimen/dp_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/commom_14sp"/>
+        <TextView
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/commom_35dp"
+            android:id="@+id/tv_page_title"
+            style="@style/MainTitle"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="课程" />
+        <include
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/commom_15dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="match_parent"
+            layout="@layout/main_layout_search"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_10dp"/>
+    <!--    <Fr-->
+    <!--        android:layout_width="match_paren t"-->
+    <!--        android:layout_height="35dp">-->
+    <!--        -->
+    <!--    </Fr>-->
+
+    <!--    <include layout="@layout/common_layout_line" />-->
+
+    <com.nj.baijiayun.basic.widget.attrtab.TabIndicatorView
+        android:visibility="gone"
+        android:id="@+id/tabIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_40dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_multstatus" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

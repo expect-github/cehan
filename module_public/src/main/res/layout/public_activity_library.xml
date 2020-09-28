@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_layout_line" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/commom_20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#d9000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2019钢铁是怎样炼成的之高考放大招" />
+
+        <LinearLayout
+            android:id="@+id/public_linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/commom_20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff8c8c8c"
+                android:textSize="12sp"
+                tools:text="作者：徐峥" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/commom_10dp"
+                android:layout_marginLeft="@dimen/commom_4dp"
+                android:layout_marginRight="@dimen/commom_4dp"
+                android:background="@color/public_FFB7B7B7" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff8c8c8c"
+                android:textSize="12sp"
+                tools:text="2018.09.09" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/commom_10dp"
+                android:layout_marginLeft="@dimen/commom_4dp"
+                android:layout_marginRight="@dimen/commom_4dp"
+                android:background="@color/public_FFB7B7B7" />
+
+            <TextView
+                android:id="@+id/tv_browse_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff8c8c8c"
+                android:textSize="12sp"
+                tools:layout_editor_absoluteX="238dp"
+                tools:layout_editor_absoluteY="64dp"
+                tools:text="56浏览" />
+
+        </LinearLayout>
+
+        <com.nj.baijiayun.module_public.widget.CollectView
+            android:id="@+id/public_collectview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/public_linearlayout2"
+            app:layout_constraintEnd_toEndOf="@+id/tv_title"
+            app:layout_constraintTop_toTopOf="@+id/public_linearlayout2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/commom_10dp">
+
+        <TextView
+            android:id="@+id/tv_open_by_other_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="文档打开失败，请尝试使用其他应用打开"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/public_progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

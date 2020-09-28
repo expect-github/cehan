@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+   >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Hello World!"
+        android:textSize="@dimen/design_content_support"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+
+    <com.nj.baijiayun.basic.widget.attrtab.TriangleView
+        android:id="@+id/tlv_1"
+        android:layout_width="8dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="9dp"
+        app:direction="bottom"
+        app:draw_color="@color/colorAccent" />
+
+
+</LinearLayout>

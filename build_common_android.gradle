@@ -1,0 +1,46 @@
+def conf = androidV
+
+android {
+    compileSdkVersion conf.compileSdkVersion
+    defaultConfig {
+        if (isModule.toBoolean()){
+            applicationId conf.applicationId
+        }
+        minSdkVersion conf.minSdkVersion
+        targetSdkVersion conf.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        resourcePrefix "${project.getName().substring(7)}_"
+
+
+    }
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                //集成开发模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility conf.sourceCompatibility
+        targetCompatibility conf.targetCompatibility
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}

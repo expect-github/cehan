@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="96dp"
+    android:layout_height="162dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main_bg_teacher_level"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/commom_13dp"
+    android:paddingRight="@dimen/commom_13dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/commom_13dp"
+        android:includeFontPadding="false" />
+
+    <TextView
+        android:lines="1"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="@dimen/commom_12dp"
+        style="@style/PublicTextListTitle"
+        tools:text="张雪峰" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="@dimen/commom_8dp"
+        style="@style/PublicTextSupportSmall"
+        android:ellipsize="end"
+        android:lines="2"
+        tools:text="网络红人考研教师" />
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_30dp">
+
+
+        <com.lihang.ShadowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="97dp"
+            app:hl_cornerRadius="@dimen/commom_10dp"
+            app:hl_shadowColor="#1A000000"
+            app:hl_shadowLimit="@dimen/commom_5dp"
+            app:hl_topShow="false">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/commom_18dp"
+                android:layout_marginTop="63dp"
+                android:layout_marginEnd="@dimen/commom_18dp"
+                android:layout_marginBottom="@dimen/commom_20dp"
+                android:lineSpacingExtra="6dp"
+                android:text="为防止误操作，请再次确认是否注销账号，并确认注销后的影响。我们对您的注销决定深表遗憾，最后善意地提醒您，注销账号为不可恢复的操作。"
+                android:textColor="#FF5B6066"
+                android:textSize="15sp" />
+
+
+        </com.lihang.ShadowLayout>
+
+
+        <ImageView
+            android:layout_width="206dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/public_logoff_bg_confirm" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_50dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/PublicButtonStroke"
+            android:layout_width="153dp"
+            android:layout_height="44dp"
+
+            android:background="@drawable/public_btn_default_stroke_100"
+            android:text="@string/public_logoff_confirm" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/PublicButton"
+            android:layout_width="153dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/commom_20dp"
+            android:background="@drawable/public_btn_default_material_100"
+            android:text="@string/public_logoff_giveup" />
+
+    </LinearLayout>
+
+</LinearLayout>

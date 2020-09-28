@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_course_type_new_two"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/commom_11dp"
+    android:layout_marginRight="@dimen/commom_11dp"
+    android:layout_marginBottom="@dimen/commom_13dp"
+    android:paddingTop="@dimen/commom_18dp"
+    android:paddingBottom="@dimen/commom_17dp"
+    android:paddingLeft="@dimen/commom_18dp"
+    android:paddingRight="@dimen/commom_18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_course_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/commom_3dp"
+            android:paddingRight="@dimen/commom_3dp"
+            android:paddingTop="@dimen/commom_1dp"
+            android:paddingBottom="@dimen/commom_1dp"
+            android:textSize="12sp"
+            android:layout_marginRight="@dimen/commom_10dp"
+            android:background="@drawable/public_bg_course_type_ke_v1"
+            android:textColor="@color/white" />
+
+        <com.nj.baijiayun.module_public.widget.CourseTitleView
+            android:id="@+id/tv_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:textColor="@color/design_text_title"
+            android:textSize="@dimen/design_title_list"
+            android:textStyle="bold"
+            tools:text="初中语文进阶初中语文进阶初中语文进阶初中语文进阶" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_course_time"
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="@dimen/commom_5dp"
+        android:text="2020年12月1号 24时"
+        android:textColor="@color/design_text_support"
+        android:textSize="@dimen/design_content_support" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:id="@+id/tv_course_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/public_tv_sign_up_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/design_text_support"
+            android:textSize="@dimen/design_content_support"
+            tools:text="2人已报名" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.nj.baijiayun.module_public.widget.PriceTextView
+            android:visibility="gone"
+            android:id="@+id/tv_price_unline"
+            style="@style/PublicTextPriceUnderLine"
+            android:layout_marginRight="@dimen/commom_10dp"
+            tools:text="¥800.00" />
+
+        <com.nj.baijiayun.module_public.widget.PriceTextView
+            android:id="@+id/tv_price_discount"
+            style="@style/PublicTextPrice"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteY="61dp"
+            tools:text="4345" />
+    </LinearLayout>
+
+
+    <com.nj.baijiayun.basic.widget.attrtab.TriangleView
+        android:layout_width="@dimen/commom_4dp"
+        android:layout_height="@dimen/commom_4dp"
+        android:visibility="gone"
+        app:direction="leftbottom"
+        app:draw_color="@color/course_type_triangle" />
+
+
+</LinearLayout>
+
+    <!--</com.lihang.ShadowLayout>-->

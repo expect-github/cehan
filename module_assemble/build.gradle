@@ -1,0 +1,4 @@
+apply from: '../build_common_dependencies.gradle'
+dependencies {
+    api project(':module_course')
+}

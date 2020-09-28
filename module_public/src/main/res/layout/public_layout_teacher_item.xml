@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+      >
+
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="@dimen/commom_30dp"
+        android:layout_height="@dimen/commom_30dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@tools:sample/avatars[0]"/>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/iv_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_1"
+        tools:text="张旭"/>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="@dimen/commom_30dp"
+        android:layout_height="@dimen/commom_30dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_2"
+        app:layout_constraintStart_toEndOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@tools:sample/avatars[1]"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/iv_2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_2"
+        tools:text="何新童"/>
+
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/iv_3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_3"
+        tools:text="商文海"/>
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="@dimen/commom_30dp"
+        android:layout_height="@dimen/commom_30dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_3"
+        app:layout_constraintStart_toEndOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:srcCompat="@tools:sample/avatars[2]"/>
+
+
+</merge>

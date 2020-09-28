@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:textColor="#ff8c8c8c"
+    android:textSize="13sp"
+    tools:text="欢迎使用百家云网校，在百家云网校之前请您仔细阅读本用户协议。百家云网校感谢您的支持和信任。 百家云教育提醒您：您可阅读《用户协议和隐私政策》了解详细信息。如您同意，请点击“同意”开始接受我们的服务。谢谢。" />

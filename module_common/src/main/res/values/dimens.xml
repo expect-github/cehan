@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="common_app_title">17sp</dimen>
+
+    <dimen name="common_title">18sp</dimen>
+    <dimen name="common_title_btn">17sp</dimen>
+    <dimen name="common_title_item">16sp</dimen>
+    <dimen name="commom_content">15sp</dimen>
+    <dimen name="commom_hint">12sp</dimen>
+    <dimen name="commom_21sp">21sp</dimen>
+    <dimen name="commom_14sp">14sp</dimen>
+    <dimen name="commom_15sp">15sp</dimen>
+    <dimen name="commom_17sp">17sp</dimen>
+    <dimen name="common_line">0.5dp</dimen>
+
+    <dimen name="commom_1dp">1dp</dimen>
+    <dimen name="commom_2dp">2dp</dimen>
+    <dimen name="commom_3dp">3dp</dimen>
+    <dimen name="commom_4dp">4dp</dimen>
+    <dimen name="commom_5dp">5dp</dimen>
+    <dimen name="commom_6dp">6dp</dimen>
+    <dimen name="commom_7dp">7dp</dimen>
+    <dimen name="commom_8dp">8dp</dimen>
+    <dimen name="commom_9dp">9dp</dimen>
+    <dimen name="commom_10dp">10dp</dimen>
+    <dimen name="commom_11dp">11dp</dimen>
+    <dimen name="commom_12dp">12dp</dimen>
+    <dimen name="commom_13dp">13dp</dimen>
+    <dimen name="commom_14dp">14dp</dimen>
+    <dimen name="commom_15dp">15dp</dimen>
+    <dimen name="commom_16dp">16dp</dimen>
+    <dimen name="commom_17dp">17dp</dimen>
+    <dimen name="commom_18dp">18dp</dimen>
+    <dimen name="commom_19dp">19dp</dimen>
+    <dimen name="commom_20dp">20dp</dimen>
+    <dimen name="commom_21dp">21dp</dimen>
+    <dimen name="commom_22dp">22dp</dimen>
+    <dimen name="commom_23dp">23dp</dimen>
+    <dimen name="commom_24dp">24dp</dimen>
+    <dimen name="commom_25dp">25dp</dimen>
+    <dimen name="commom_26dp">26dp</dimen>
+    <dimen name="commom_27dp">27dp</dimen>
+    <dimen name="commom_28dp">28dp</dimen>
+    <dimen name="commom_29dp">29dp</dimen>
+    <dimen name="commom_30dp">30dp</dimen>
+    <dimen name="commom_31dp">31dp</dimen>
+    <dimen name="commom_32dp">32dp</dimen>
+    <dimen name="commom_33dp">33dp</dimen>
+    <dimen name="commom_34dp">34dp</dimen>
+    <dimen name="commom_35dp">35dp</dimen>
+    <dimen name="commom_36dp">36dp</dimen>
+    <dimen name="commom_37dp">37dp</dimen>
+    <dimen name="commom_38dp">38dp</dimen>
+    <dimen name="commom_39dp">39dp</dimen>
+    <dimen name="commom_40dp">40dp</dimen>
+    <dimen name="commom_50dp">50dp</dimen>
+    <dimen name="commom_52dp">52dp</dimen>
+    <dimen name="commom_110dp">110dp</dimen>
+    <dimen name="commom_76dp">76dp</dimen>
+    <dimen name="common_15sp">15sp</dimen>
+
+
+</resources>

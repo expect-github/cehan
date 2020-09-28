@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:id="@+id/iv_folder"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/downing_folder" />
+
+    <TextView
+        android:id="@+id/tv_caching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_folder"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/iv_folder"
+        android:text="@string/download_downloading"
+        android:textColor="@color/common_main_text_color_title"
+        android:textSize="12sp" />
+
+    <TextView
+        tools:text="(4)"
+        android:id="@+id/tv_download_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_folder"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_caching"
+        android:textColor="@color/color_e28e33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_last_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_folder"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/iv_folder"
+        android:textColor="@color/common_main_text_color_content"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_download_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_folder"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/common_main_text_color_subcontent"
+        android:textSize="11sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tv_download_speed"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="27dp"
+        android:max="100"
+        android:progress="3"
+        android:progressDrawable="@drawable/download_pb" />
+</RelativeLayout>

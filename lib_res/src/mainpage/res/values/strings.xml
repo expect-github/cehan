@@ -1,0 +1,32 @@
+<resources>
+    <string name="main_app_name">module_main</string>
+
+    <string name="main_tab_1">首页</string>
+    <string name="main_tab_2">选课</string>
+    <string name="main_tab_3">约课记录</string>
+    <string name="main_tab_4">练习</string>
+    <string name="main_tab_5">我的</string>
+    <string name="main_exit_confirm">再按一次退出程序</string>
+
+    <string name="main_select_course">选课</string>
+    <string name="main_one_to_one">一对一</string>
+    <string name="main_learn_calendar">学习日历</string>
+    <string name="main_teachers">名师</string>
+    <string name="main_books">图书</string>
+    <string name="main_news">资讯</string>
+    <string name="main_library">文库</string>
+    <string name="main_assemble">嗨拼团</string>
+    <string name="main_community">社区</string>
+
+
+    <string name="main_course_list">课程</string>
+    <string name="main_login_or_register">登录/注册</string>
+    <string name="main_vip_append">续费会员</string>
+    <string name="main_vip_open">开通会员</string>
+    <string name="main_search">搜索</string>
+    <string name="main_sign_status_init">签到</string>
+    <string name="main_sign_status_signed">已签到</string>
+    <string name="main_appoint_course">约课</string>
+
+
+</resources>

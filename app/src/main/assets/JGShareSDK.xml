@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <!-- 如果不需要支持某平台，可缺省该平台的配置-->
+    <!-- 各个平台的KEY仅供DEMO演示，开发者要集成发布需要改成自己的KEY-->
+    <!--请不要在这里改动,每次编译会被覆盖,请在app gradle文件进行配置-->
+    <SinaWeibo
+        AppKey="JGSinaShareKey"
+        AppSecret="JGSinaShareSecret"
+        RedirectUrl="https://www.jiguang.cn"/>
+
+    <QQ
+        AppId="101868711"
+        AppKey="683b86ca2f76fe0cdf2e9c21fe68cd1b"/>
+
+    <Wechat
+        AppId="wxb42bc66a3889c31a"
+        AppSecret="c4e59aa1cbc9e7ea9318872472020307"/>
+
+</DevInfor>

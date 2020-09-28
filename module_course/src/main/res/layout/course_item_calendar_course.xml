@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="@dimen/commom_10dp"
+    app:cardCornerRadius="@dimen/commom_10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="@dimen/commom_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_course_type"
+                android:layout_width="@dimen/commom_40dp"
+                android:layout_height="@dimen/commom_18dp"
+                android:background="@drawable/course_bg_try_look"
+                android:gravity="center"
+                android:text="试看 "
+                android:textColor="@color/white"
+                android:textSize="12sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_live_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="[暂无回放]"
+                android:textColor="@color/public_FF8C8C8C"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/commom_7dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/public_FF595959"
+                android:textSize="12sp"
+                tools:text="[直播中]  19:30 - 20:30"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_section_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#ff595959"
+            android:textSize="15sp"
+            tools:text="课时1：雅思英语七日冲刺！"
+            />
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="#ff595959"
+            android:textSize="12sp"
+            tools:text="学员可在前五分钟进入教室"
+            />
+
+        <include
+            android:visibility="gone"
+            layout="@layout/course_layout_work_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/commom_11dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

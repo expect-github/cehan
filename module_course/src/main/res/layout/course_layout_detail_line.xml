@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_line"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/commom_1dp"
+    android:background="@color/common_F5F5F5"
+    tools:showIn="@layout/course_activity_wx_detail" />
+
+
+    

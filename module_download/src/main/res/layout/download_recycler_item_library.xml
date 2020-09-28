@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="87dp"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/tv_title"
+        android:layout_width="307dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/cb_delete"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textColor="#ff20242a"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_file_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Spring Boot2 系列教程(十)整合这本书Spring Boot2 系列教程(十)整合这本书" />
+
+    <TextView
+        android:id="@+id/tv_abstract"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="27dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#ff8c8c8c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_file_type"
+        app:layout_constraintEnd_toStartOf="@+id/tv_status_read"
+        app:layout_constraintStart_toEndOf="@+id/iv_file_type"
+        app:layout_constraintTop_toTopOf="@+id/iv_file_type"
+        tools:text="在的v使用过程中会遇到各种场景的这在的v使用过程中会遇到各种场景的这在的v使用过程中会遇到各种场景的这在的v使用过程中会遇到各种场景的这…" />
+
+    <TextView
+        android:id="@+id/tv_status_read"
+        android:layout_width="28dp"
+        android:layout_height="15dp"
+        android:includeFontPadding="false"
+        android:text="@string/download_read_status_read"
+        android:textColor="#ff8c8c8c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_abstract"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_abstract" />
+
+    <ImageView
+        android:id="@+id/iv_file_type"
+        android:layout_width="10dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/cb_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

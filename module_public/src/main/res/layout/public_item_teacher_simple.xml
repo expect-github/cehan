@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="@dimen/commom_30dp"
+        android:layout_height="@dimen/commom_30dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/common_default_head"/>
+        <com.nj.baijiayun.basic.widget.RoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/commom_30dp"
+            android:layout_height="@dimen/commom_30dp"
+            app:round_type="circle"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        tools:text="张旭张旭" />
+
+
+</LinearLayout>

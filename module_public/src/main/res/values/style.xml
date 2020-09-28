@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--启动页面-->
+    <style name="PublicAppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/public_bg_app_launch_theme</item>
+    </style>
+
+    <style name="PublicMainAppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/common_main_bg</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="PublicToolBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorButtonNormal">@android:color/black</item>
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--app 默认 fragment 背景会跟随activity-->
+    <style name="PublicAppTheme" parent="CommonAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorControlActivated">@color/common_main_color</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/common_main_bg</item>
+    </style>
+
+
+    <!--
+    该theme 的页面view.getContent()为包装content
+     不是返回activity 切记不要设置到全局，否则需要处理所有地方根据getContext 转activity
+  -->
+    <style name="PublicPreViewFileTheme" parent="PublicAppTheme">
+        <item name="android:theme">@style/PublicToolBarTheme</item>
+    </style>
+
+
+    <style name="PublicAppWhiteBgTheme" parent="PublicAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <!--中间弹窗框动画-->
+    <style name="DialogCentreAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_centre_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_centre_anim_exit</item>
+    </style>
+
+    <!--弹出框周围模糊-->
+    <style name="style_dialog_fuzzy" parent="commonStyleDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="commonStyleDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PublicForgetPwdTitle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FF333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="PublicCardView">
+        <item name="cardElevation">1dp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style>
+
+
+    <style name="PublicEditStyle">
+        <!--        <item name="colorControlNormal">@color/white</item>-->
+        <!--        <item name="colorControlActivated">@color/common_main_color</item>-->
+        <item name="android:background">@drawable/public_bg_cursor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:inputType">text</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:textColor">@color/common_main_text_color_title</item>
+        <item name="android:textColorHint">@color/common_main_text_color_content</item>
+    </style>
+
+    <style name="PublicPwdEditStyle" parent="PublicEditStyle">
+        <!--app:common_pwd_eye_close="@drawable/public_ic_eye_close"-->
+        <!--app:common_pwd_eye_open="@drawable/public_ic_eye_open"-->
+        <item name="common_pwd_eye_close">@drawable/public_ic_eye_close</item>
+        <item name="common_pwd_eye_open">@drawable/public_ic_eye_open</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">16</item>
+        <item name="android:textSize">@dimen/commom_15sp</item>
+    </style>
+
+    <style name="PublicCodeEditStyle" parent="PublicEditStyle">
+        <item name="android:maxLength">6</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="PublicPhoneEditStyle" parent="PublicEditStyle">
+
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="PublicAnimTopInTopOut">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+
+    </style>
+
+    <style name="PublicCouponDialog" parent="android:Theme.Dialog">
+
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--是否没有标题-->
+        <item name="android:windowNoTitle">false</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否背景模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.5</item>
+
+    </style>
+
+    <style name="PublicBottomDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/public_bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/public_bottom_dialog_exit</item>
+    </style>
+
+
+    <style name="PublicButtonParent">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_height">@dimen/public_btn_normal_height</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="PublicButton" parent="PublicButtonParent">
+        <item name="android:textColor">@color/public_btn_normal_selector</item>
+        <item name="android:background">@drawable/public_btn_default_material</item>
+
+    </style>
+
+    <style name="PublicButtonStroke" parent="PublicButtonParent">
+        <item name="android:textColor">@color/common_main_color</item>
+        <item name="android:background">@drawable/public_btn_default_stroke</item>
+
+    </style>
+
+    <style name="PublicButtonRight" parent="PublicButtonParent">
+        <item name="android:textColor">@color/public_btn_normal_selector</item>
+        <item name="android:background">@drawable/public_btn_right_radius</item>
+
+    </style>
+
+    <style name="PublicButtonLeft" parent="PublicButtonParent">
+        <item name="android:textColor">@color/public_btn_left_selector</item>
+        <item name="android:background">@drawable/public_btn_left_radius</item>
+
+    </style>
+
+
+    <style name="PublicButtonLeftSelect" parent="PublicButtonParent">
+        <item name="android:textColor">@color/public_btn_selector</item>
+        <item name="android:background">@drawable/public_btn_left_radius_select</item>
+
+    </style>
+
+    <style name="PublicButtonRightSelect" parent="PublicButtonParent">
+        <item name="android:textColor">@color/public_btn_selector</item>
+        <item name="android:background">@drawable/public_btn_right_radius_select</item>
+
+    </style>
+
+    <style name="publicButtonGoStyle">
+        <item name="android:background">@drawable/public_bg_btn_go</item>
+        <item name="android:textColor">@color/common_main_color</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/commom_21dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="PublicLineItemSplit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/design_common_line_1</item>
+    </style>
+    <style name="PublicTextWrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="PublicTextSupportSmall" parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_text_support</item>
+        <item name="android:textSize">@dimen/design_content_support_12</item>
+    </style>
+
+    <style name="PublicTextSupport"  parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_text_support</item>
+        <item name="android:textSize">@dimen/design_content_support</item>
+    </style>
+    <style name="PublicTextNormalContent" parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_text_support</item>
+        <item name="android:textSize">@dimen/design_content_support</item>
+    </style>
+
+    <style name="PublicTextLabel" parent="PublicTextWrap">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/design_text_select</item>
+        <item name="android:textSize">@dimen/design_title_big</item>
+    </style>
+
+    <style name="PublicTextMore" parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_text_support</item>
+        <item name="android:textSize">@dimen/design_content_support</item>
+    </style>
+
+    <style name="PublicTextListTitle" parent="PublicTextWrap">
+
+        <item name="android:textColor">@color/design_text_title</item>
+        <item name="android:textSize">@dimen/design_title_list</item>
+    </style>
+    <style name="PublicTextPrice" parent="PublicTextWrap">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/design_price</item>
+        <item name="android:textSize">@dimen/design_price</item>
+    </style>
+    <style name="PublicTextPriceUnderLine" parent="PublicTextWrap">
+        <item name="android:textColor">@color/public_FF8C8C8C</item>
+        <item name="android:textSize">@dimen/design_content_small</item>
+
+    </style>
+
+
+</resources>

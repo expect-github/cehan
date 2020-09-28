@@ -1,0 +1,36 @@
+task dist(group: 'dist') {
+    tasks.dist.dependsOn("assembleRelease")
+    doFirst {
+        delete new File(rootProject.rootDir, 'dist')
+        println("delete dist")
+    }
+    doLast {
+        android.applicationVariants.all { variant ->
+            def time = new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+8"))
+            def app_name=APP_NAME
+            def distDir = file('../dist/')
+            if (!distDir.exists()) {
+                distDir.mkdirs()
+            }
+            variant.outputs.all {
+                output ->
+                    def fileName
+                    def productFlavor = ""
+                    def abiName = ""
+                    if (output.getFilter(output.ABI) != null) {
+                        abiName = "_${output.getFilter(output.ABI)}"
+                    }
+                    if (variant.productFlavors != null && variant.productFlavors.size() > 0) {
+                        productFlavor = "_${variant.productFlavors[0].name}"
+                    }
+                    fileName = "${app_name}${productFlavor}_v${variant.versionName}_${variant.versionCode}_${time}_${variant.buildType.name}${abiName}.apk"
+                    if (file(outputFile).exists()) {
+                        file(outputFile).renameTo(file("../dist/" + fileName))
+                    }
+
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="PublicTranslateStatusBarAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/common_main_color</item>
+        <item name="colorPrimaryDark">@color/common_main_color</item>
+        <item name="colorPrimary">@color/common_main_color</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+
+        <!--<item name="android:windowBackground">@color/white</item>-->
+
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+
+
+    </style>
+
+    <style name="PublicAppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/public_bg_app_launch_theme</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+
+
+</resources>

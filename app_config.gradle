@@ -1,0 +1,21 @@
+def h5local = [
+        api: BASE_URL_API_TEST,
+        h5 : "http://172.20.2.50:8082"
+]
+
+def test = [
+        api: BASE_URL_API_TEST,
+        h5 : BASE_URL_H5_TEST
+
+]
+def demo = [
+        api: BASE_URL_API_DEMO,
+        h5 : BASE_URL_H5_DEMO
+
+]
+def release = [
+        api: BASE_URL_API_RELEASE,
+        h5 : BASE_URL_H5_RELEASE
+]
+
+ext.baseurl = test

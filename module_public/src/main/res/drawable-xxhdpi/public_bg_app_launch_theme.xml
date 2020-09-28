@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+
+            <item android:drawable="@color/public_bg_app_launch" />
+        </layer-list>
+    </item>
+
+    <item >
+        <layer-list>
+            <item>
+                <bitmap
+                    android:gravity="fill"
+                    android:src="@drawable/public_bg_app_start" />
+            </item>
+        </layer-list>
+    </item>
+
+</layer-list>

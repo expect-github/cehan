@@ -1,0 +1,63 @@
+<resources>
+    <string name="course_app_name">module_course</string>
+
+
+    <string name="course_my_learned">我学过的</string>
+    <string name="course_appoint_course">预约</string>
+    <string name="course_detail_activity">活动：</string>
+    <string name="course_detail_title_teacher">教学团队</string>
+    <string name="course_detail_title_desc">课程介绍</string>
+    <string name="course_detail_title_outline">课程大纲</string>
+    <string name="course_detail_title_comment">课程评价</string>
+    <string name="course_detail_title_assemble_play">拼团玩法</string>
+
+
+
+    <string name="course_format_learned">已学习{0}%</string>
+    <string name="course_fmt_section">共{0}个课时</string>
+    <string name="course_vip">会员</string>
+    <string name="course_my_learned_vip_end_at">课程中有会员课，会员课将于{0}日过期</string>
+    <string name="course_my_learned_vip_end_in_three_day">课程中有会员课，会员课将于{0}天后到期。去续费</string>
+    <string name="course_fmt_learn_calendar_date">%1$d年%2$d月</string>
+    <string name="course_activity_title_learn_calendar">学习日历</string>
+    <string name="course_remove_success">移除成功</string>
+    <string name="course_remove_content_buy_again">移除的课程在“我的学习”列表中将不再显示。您可以在订单中重新将其加入“我的学习”。</string>
+    <string name="course_remove_content_join_learn">移除的课程在“我的学习”列表中将不再显示。您可以在课程详情页通过“加入学习”重新将会员课程加入“我的学习”列表</string>
+    <string name="course_comment_success">评论成功</string>
+    <string name="course_edit_comment">写评价</string>
+    <string name="course_submit_bt">作业提交</string>
+    <string name="course_work">课程作业</string>
+    <string name="course_look_work">查看作业</string>
+    <string name="course_assemble_step1">选择商品\n开团/参团</string>
+    <string name="course_assemble_step2">付款成功\n邀请好友</string>
+    <string name="course_assemble_step3">人满成团\n失败退款</string>
+    <string name="course_learn_right_now">立即学习</string>
+<!--    <string name="course_fmt_assemble_single_buy">{0}\n单独购买</string>-->
+<!--    <string name="course_fmt_assemble_together_buy">{0}\n我要开团</string>-->
+<!--    <string name="course_fmt_assemble_look_detail">{0}\n查看我的团</string>-->
+    <string name="course_assemble_single_buy">单独购买</string>
+    <string name="course_assemble_together_buy">我要开团</string>
+    <string name="course_assemble_look_detail">查看我的团</string>
+    <string name="course_fmt_assemble_left_join_number">还差{0}人成团</string>
+    <string name="course_fmt_assemble_join_number">已有{0}人参与拼团</string>
+
+
+    <string name="course_fmt_assemble_left_stock_over_zero">拼团名额剩余{0}个，请尽快开团抢购哦~</string>
+    <string name="course_fmt_assemble_left_stock_empty">拼团名额已售罄，可单独购买学习哦~</string>
+    <string name="course_count_down_end">距离结束剩余</string>
+    <string name="course_detail_public_course_outline">包含课程</string>
+    <string name="course_limit">@string/public_limit</string>
+    <string name="course_not_allow_again_join">您已经参加了拼团活动\n不能同时参加多个团</string>
+    <string name="course_undercarriage">啊哦，你来晚了，该课程已下架～</string>
+    <string name="course_undercarriage_not_allow_learn">该课程已下架，无法继续学习，如有问题请联系客服~</string>
+    <string name="course_go_other_course">看看其他课程</string>
+    <string name="course_hide_course">隐藏课程</string>
+    <string name="course_recover_hide_course">取消隐藏</string>
+    <string name="course_hide_course_hint">隐藏后，可在“我的课程-已隐藏课程”中查看和恢复</string>
+    <string name="course_my_course_title">我的学习</string>
+    <string name="course_my_hide_course_title">已隐藏课程</string>
+    <string name="course_cancel_hide_success">取消隐藏成功</string>
+    <string name="course_cancel_hide_course">确认要取消隐藏课程？</string>
+
+
+</resources>

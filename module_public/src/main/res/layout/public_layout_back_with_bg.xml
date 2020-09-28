@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_head_bg"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        tools:text="人力资源应知应会检测"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/commom_20dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:tint="@android:color/white"
+        android:src="@drawable/public_ic_back"/>
+
+
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/img_right"
+        android:layout_width="@dimen/commom_20dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:tint="@android:color/white"
+        android:src="@drawable/public_ic_search"/>
+
+
+</merge>

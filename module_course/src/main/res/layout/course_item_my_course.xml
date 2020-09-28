@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_10dp"
+    android:layout_marginRight="@dimen/commom_10dp"
+    android:background="@drawable/public_bg_white_round_4"
+    android:paddingBottom="@dimen/commom_15dp">
+
+    <com.nj.baijiayun.module_public.widget.CourseTitleView
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:lines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_vip"
+        app:layout_goneMarginTop="@dimen/commom_15dp"
+        tools:text="初中语文进阶进阶神器七天精选课程初中语文进阶进阶神器七天精选课程" />
+
+    <TextView
+        android:id="@+id/tv_course_vip"
+        android:layout_width="38dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/public_bg_shap_vip_no_top_radius"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/course_vip"
+        android:textColor="@color/public_FF262626"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        android:id="@+id/ll_time_range"
+        layout="@layout/public_layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_name" />
+
+
+    <include
+        android:id="@+id/rel_learn_pgr_parent"
+        layout="@layout/course_layout_progress_base_space"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/ll_time_range"
+        app:layout_constraintTop_toBottomOf="@+id/ll_time_range" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:includeFontPadding="false"
+        android:text="今日有直播/正在直播"
+        android:textColor="@color/common_main_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_time_range" />
+
+
+    <ImageView
+
+        android:id="@+id/iv_invalid"
+        android:layout_width="58dp"
+        android:layout_height="47dp"
+
+        android:layout_marginRight="@dimen/commom_10dp"
+        android:src="@drawable/course_ic_invalid"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
+
+    <!--        android:layout_marginEnd="@dimen/commom_15dp"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:background="@null"-->
+    <!--        android:id="@+id/btn_recover"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="@dimen/commom_30dp"-->
+    <!--        android:text="取消恢复"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_course_vip" />-->
+
+    <View
+        android:id="@+id/view_line_hide"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:background="@color/common_item_line"
+        app:layout_constraintEnd_toEndOf="@+id/tv_course_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/rel_learn_pgr_parent" />
+
+    <TextView
+        android:id="@+id/tv_hide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:includeFontPadding="false"
+        android:text="@string/course_recover_hide_course"
+        android:textColor="@color/common_main_color"
+        app:layout_constraintEnd_toEndOf="@+id/view_line_hide"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_hide" />
+
+    <ImageView
+
+        android:id="@+id/iv_hide"
+        android:layout_width="16.5dp"
+        android:layout_height="12.5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_hide_text"
+        app:layout_constraintEnd_toStartOf="@+id/tv_hide_text"
+        app:layout_constraintTop_toTopOf="@+id/tv_hide_text"
+        app:srcCompat="@drawable/course_ic_recover_from_hide" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gp_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_hide,tv_hide_text,view_line_hide" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

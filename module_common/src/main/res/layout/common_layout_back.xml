@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="7dp"
+        android:layout_height="@dimen/commom_13dp"
+        android:src="@drawable/common_back_icon"
+        android:tint="@color/design_text_normal" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="返回"
+        android:textColor="@color/design_text_normal"
+        android:textSize="14sp" />
+
+</LinearLayout>

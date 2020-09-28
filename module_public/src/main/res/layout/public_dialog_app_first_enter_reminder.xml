@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="261dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/public_bg_white_round_10"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_20dp"
+        android:textColor="#ff595959"
+        android:textSize="17sp"
+        android:text="服务协议和隐私政策" />
+
+
+    <com.nj.baijiayun.basic.widget.MultipleStatusView
+        android:layout_width="match_parent"
+        android:id="@+id/multiple_status_view"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="@dimen/commom_20dp"
+        android:layout_height="154dp">
+
+
+
+    </com.nj.baijiayun.basic.widget.MultipleStatusView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/PublicButtonStroke"
+            android:layout_width="92dp"
+            android:layout_height="@dimen/commom_31dp"
+            android:text="暂不同意"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/PublicButton"
+            android:layout_width="92dp"
+            android:layout_height="@dimen/commom_31dp"
+            android:layout_marginStart="@dimen/commom_20dp"
+            android:text="同意"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

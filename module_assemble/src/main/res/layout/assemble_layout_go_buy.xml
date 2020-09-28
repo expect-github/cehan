@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price"
+        style="@style/PublicTextPrice"
+        tools:text="4345" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price_underline"
+        style="@style/PublicTextPriceUnderLine"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/commom_2dp"
+        tools:text="¥800.00" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tv_go_buy"
+        android:layout_width="57dp"
+        android:layout_height="@dimen/commom_27dp"
+        android:background="@drawable/assemble_bg_go_buy"
+        android:gravity="center"
+        android:text="去拼团"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/detail_below_vp_1_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/commom_11dp"
+            android:paddingLeft="@dimen/commom_15dp"
+            android:paddingRight="@dimen/commom_15dp"
+            android:paddingBottom="@dimen/commom_11dp">
+
+            <TextView
+                android:id="@+id/detail_below_vp_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程介绍"
+                android:layout_marginBottom="@dimen/commom_5dp"
+                android:textColor="@color/course_detail"
+                android:textSize="@dimen/commom_15sp" />
+
+            <View
+                android:id="@+id/detail_below_vp_1_view"
+                android:layout_width="12dp"
+                android:layout_height="2dp"
+                android:background="@color/course_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_below_vp_2_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commom_8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/commom_11dp"
+            android:paddingLeft="@dimen/commom_15dp"
+            android:paddingRight="@dimen/commom_15dp"
+            android:paddingBottom="@dimen/commom_11dp">
+
+            <TextView
+                android:id="@+id/detail_below_vp_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程大纲"
+                android:layout_marginBottom="@dimen/commom_5dp"
+                android:textColor="@color/common_main_text_color_subtitle"
+                android:textSize="@dimen/commom_15sp" />
+
+            <View
+                android:id="@+id/detail_below_vp_2_view"
+                android:layout_width="12dp"
+                android:visibility="gone"
+                android:layout_height="2dp"
+                android:background="@color/course_detail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_below_vp_3_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commom_8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/commom_11dp"
+            android:paddingLeft="@dimen/commom_15dp"
+            android:paddingRight="@dimen/commom_15dp"
+            android:paddingBottom="@dimen/commom_11dp">
+
+            <TextView
+                android:id="@+id/detail_below_vp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程评价"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:textColor="@color/common_main_text_color_subtitle"
+                android:textSize="@dimen/commom_15sp" />
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/detail_below_vp_3_view"
+                android:layout_width="12dp"
+                android:layout_height="2dp"
+                android:background="@color/course_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.nj.baijiayun.module_course.ui.wx.courseDetail.AutoHeightViewPager
+        android:id="@+id/detail_below_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

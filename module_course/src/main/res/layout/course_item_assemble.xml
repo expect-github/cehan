@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginLeft="@dimen/commom_10dp"
+    android:layout_marginRight="@dimen/commom_10dp"
+    android:background="@drawable/course_assemble_shadow"
+    app:cardCornerRadius="@dimen/commom_29dp"
+    app:hl_cornerRadius="@dimen/commom_29dp"
+    app:hl_shadowColor="#14000000"
+    app:hl_shadowLimit="4dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <ImageView
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="64dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/course_assemble_group_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/commom_32dp"
+            android:layout_height="@dimen/commom_32dp"
+            android:layout_marginStart="18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/public_ic_head_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:textColor="@color/public_FF262626"
+            android:textSize="@dimen/commom_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_left_person_number"
+            app:layout_constraintStart_toEndOf="@+id/iv_head"
+            app:layout_constraintTop_toTopOf="@+id/iv_head"
+            tools:text="张齐贤张齐贤张齐贤张齐贤张齐贤" />
+
+        <TextView
+            android:id="@+id/tv_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/course_count_down_end"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+            app:layout_constraintStart_toStartOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="68dp"
+            android:layout_height="@dimen/commom_21dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/course_bg_assemble_action"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="我要参团"
+            android:layout_marginBottom="@dimen/commom_2dp"
+            android:textColor="@color/public_orange"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/tv_left_person_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_action"
+            app:layout_constraintEnd_toStartOf="@+id/tv_action"
+            app:layout_constraintTop_toTopOf="@+id/tv_action"
+            tools:text="还差1人成团" />
+
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_left_time"
+            app:layout_constraintStart_toEndOf="@+id/tv_left_time"
+            tools:text="10:10:10" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.lihang.ShadowLayout>

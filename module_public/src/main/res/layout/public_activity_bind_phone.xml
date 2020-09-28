@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.ForgetPwdActivity">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="@dimen/commom_5dp"
+        android:background="@android:color/white"
+      >
+
+        <TextView
+            style="@style/PublicForgetPwdTitle"
+            android:text="@string/public_mobile"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/PublicPhoneEditStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/public_phone_hint"/>
+
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            layout="@layout/public_layout_get_code"/>
+
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/public_view_line_with_margin"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            style="@style/PublicForgetPwdTitle"
+            android:text="@string/public_code"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_height="match_parent"
+            android:id="@+id/edit_code"
+            style="@style/PublicCodeEditStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/public_code_hint"/>
+
+
+    </LinearLayout>
+
+    <com.nj.baijiayun.module_common.widget.EyeEditText
+        android:id="@+id/edit_pwd"
+        android:layout_height="55dp"
+        style="@style/PublicPwdEditStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_marginEnd="@dimen/commom_20dp"
+        android:hint="@string/public_pwd_hint"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/public_pwd_input_text_hint"
+        android:textColor="#ffb7b7b7"
+        android:textSize="12sp"
+        />
+
+
+    <include layout="@layout/public_layout_btn_with_shadow"/>
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_confirm"-->
+        <!--style="@style/CommonButton"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:text="@string/confirm"/>-->
+
+</LinearLayout>

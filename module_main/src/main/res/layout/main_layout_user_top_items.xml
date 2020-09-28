@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_top_tabs"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/me_rv_new_bg"
+    android:layout_marginLeft="@dimen/commom_15dp"
+    android:layout_marginRight="@dimen/commom_15dp"
+    android:layout_marginBottom="@dimen/commom_15dp"
+    android:layout_marginTop="@dimen/commom_15dp"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/bg_iv"
+    tools:showIn="@layout/main_fragment_wx_user_v2">
+
+    <LinearLayout
+        android:id="@+id/ll_tab_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/me_select_left_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_course_num"
+            style="@style/MainUserNum_new"
+            android:text="0"
+             />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/MainUserNormal_new"
+            android:layout_marginTop="19dp"
+            android:text="我的学习"
+           />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_2"
+        android:layout_width="0dp"
+        android:background="@drawable/me_select_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_appoint_num"
+            style="@style/MainUserNum_new"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/main_textview7"
+            style="@style/MainUserNormal_new"
+            android:layout_marginTop="19dp"
+            android:text="我的预约" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_3"
+        android:layout_width="0dp"
+        android:background="@drawable/me_select_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_gold_num"
+            style="@style/MainUserNum_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/main_textview10"
+            style="@style/MainUserNormal_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="本周课时"
+            />
+
+        <TextView
+            android:id="@+id/main_textview11"
+            style="@style/MainUserNormal_new"
+            android:layout_marginTop="19dp"
+            android:text="学习日历"
+            android:visibility="gone"
+           />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_4"
+        android:layout_width="0dp"
+        android:background="@drawable/me_select_right_bg"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_integral_number"
+            style="@style/MainUserNum_new"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/tv_integral_desc"
+            style="@style/MainUserNormal_new"
+            android:layout_marginTop="19dp"
+            android:text="我的积分"
+           />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+        

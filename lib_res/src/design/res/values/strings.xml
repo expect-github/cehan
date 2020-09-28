@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="public_search_course">搜索课程</string>
+    <string name="public_search_course_new">输入课程名或老师名</string>
+    <string name="design_course_type">课程类型</string>
+    <string name="design_sort_com">综合</string>
+    <string name="design_category">分类</string>
+    <string name="design_more">更多</string>
+    <string name="design_fmt_author">作者：%1$s</string>
+</resources>

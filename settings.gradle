@@ -1,0 +1,11 @@
+include ':app', ':module_assemble', ':module_distribution', ':lib_res',
+        ':lib_http',
+        ':lib_basic',
+        ':lib_jsbridge',
+        ':sdk_player_wrapper',
+        ':module_common',
+        ':module_public',
+        ':module_download',
+        ':module_main',
+        ':module_course', ':lib_cachewebview'
+//      ,  ':sdk_videoplayer_ui'

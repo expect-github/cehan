@@ -1,0 +1,6 @@
+apply from: '../build_common_dependencies.gradle'
+dependencies {
+    implementation "com.nj.baijiayun:downloader:$baijiayun.downloader"
+}
+
+

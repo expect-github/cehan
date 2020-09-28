@@ -1,0 +1,11 @@
+<resources>
+    <string name="assemble_course">课程</string>
+    <string name="assemble_book">图书</string>
+    <string name="assemble_fmt_assemble_join_number">{0}人已拼</string>
+    <string name="assemble_fmt_assemble_join_number_tag">{0}人团</string>
+    <string name="assemble_shop">拼团商城</string>
+    <string name="assemble_my_assemble">我的拼团</string>
+    <string name="assemble_activity_assemble_list">嗨拼团</string>
+    <string name="assemble_fmt_single_buy">单买:{0}</string>
+
+</resources>

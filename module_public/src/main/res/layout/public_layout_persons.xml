@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:gravity="center_vertical"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/public_ic_item_person"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:lines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_persons"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="王新华丨李新华"
+        android:textColor="#FF666666"
+        android:textSize="12sp"
+        />
+</LinearLayout>

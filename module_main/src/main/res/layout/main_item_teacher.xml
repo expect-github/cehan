@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="@dimen/commom_15dp"
+    android:minHeight="70dp"
+    android:background="@drawable/public_bg_white_round_10">
+
+    <ImageView
+
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/iv_head"
+        android:textColor="@color/common_main_text_color_title"
+        android:textSize="14sp"
+        tools:text="王晓晓"/>
+
+    <TextView
+        android:layout_alignBaseline="@+id/tv_name"
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/tv_name"
+        android:textColor="@color/main_FFE74D3D"
+        android:textSize="10sp"
+        tools:text="高级讲师"/>
+
+    <TextView
+        android:layout_marginBottom="@dimen/commom_12dp"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="@dimen/commom_6dp"
+        android:layout_toEndOf="@id/iv_head"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/public_FFB7B7B7"
+        android:textSize="12sp"
+        tools:text="师的介绍这里是讲师的介绍这里是讲师的介绍"/>
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tv_appoint_status"
+        android:gravity="center"
+        android:background="@drawable/main_bg_is_oto"
+        android:layout_width="@dimen/commom_38dp"
+        android:layout_height="@dimen/commom_18dp"
+        android:text="@string/main_appoint_course"
+        android:textColor="@color/main_FFE74D3D"
+        android:textSize="9sp"
+        />
+
+</RelativeLayout>

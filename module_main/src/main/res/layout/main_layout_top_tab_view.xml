@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <ImageView
+        android:src="@drawable/main_home_top_tab_select_course"
+        android:id="@+id/img_ic_select_course"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:id="@+id/tv_select_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_select_course"
+        android:textColor="#FF8C8C8C"
+        android:textSize="12sp"
+       />
+
+
+</merge>

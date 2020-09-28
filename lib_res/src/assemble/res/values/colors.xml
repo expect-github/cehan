@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="assemble_tag_join_bg_color">#1aee1f1f</color>
+    <color name="assemble_tag_course_type_color">#1AEA7A2F</color>
+    <color name="assemble_tag_course_type_tv_color">#FFEA7A2F</color>
+    <color name="assemble_tag_join_tv_color">#FFEE1F1F</color>
+</resources>

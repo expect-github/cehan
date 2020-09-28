@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="public_user_login_line">#E6E6E6</color>
+    <color name="public_progress_unfinished">#FFF6F6F6</color>
+    <color name="public_FF595959">#FF595959</color>
+    <color name="public_E8E8E8">#FFE8E8E8</color>
+    <color name="public_FF8C8C8C">#FF8C8C8C</color>
+    <color name="public_FFB7B7B7">#FFB7B7B7</color>
+    <color name="public_73000000">#73000000</color>
+    <color name="public_D9000000">#D9000000</color>
+    <color name="public_ff595959">#ff595959</color>
+
+    <color name="public_calendar_today_bg">#FFEBEEFE</color>
+    <color name="public_calendar_select_bg">@color/common_main_color</color>
+    <color name="public_calendar_un_enable">#FFB7B7B7</color>
+    <color name="public_calendar_select_text">@color/white</color>
+    <color name="public_calendar_today_text">@color/common_main_color</color>
+    <color name="public_calendar_normal_text">#FF000000</color>
+    <color name="public_FFF4F4F4">#FFF4F4F4</color>
+    <color name="public_price">@color/design_price</color>
+    <color name="public_FF262626">#FF262626</color>
+    <color name="public_vip_gradient_end">#ffa38259</color>
+    <color name="public_vip_gradient_start">#ffceb89c</color>
+    <color name="public_FFD9D9D9">#FFD9D9D9</color>
+    <color name="public_orange">#FFEA7A2F</color>
+    <color name="public_coupon_un_get">@color/public_FF8C8C8C</color>
+    <color name="public_coupon_get">#ffe14641</color>
+    <color name="public_coupon_get_new">#333333</color>
+    <!--//修改进度视频-->
+    <color name="public_1A4169FF">#1A4169FF</color>
+    <color name="public_fff1f1f1">#fff1f1f1</color>
+    <color name="public_999999">#999999</color>
+
+    <color name="public_tag_vip_bg">#1AEE1F1F</color>
+    <color name="public_tag_vip_text">#FFEE1F1F</color>
+    <color name="public_tag_coupon_bg">#FFFF824D</color>
+    <color name="public_tag_coupon_bg_triangle">#FFFF7522</color>
+    <color name="public_tag_coupon_text">@color/white</color>
+    <color name="public_tag_course_text">#FFEA7A2F</color>
+    <color name="public_tag_course_bg">#1AEA7A2F</color>
+    <color name="public_tag_spell_text">@color/white</color>
+    <color name="public_tag_spell_bg">#FFFF5D88</color>
+    <color name="public_tag_spell_bg_triangle">#FFFF5560</color>
+
+    <color name="mask_protect_eyes">#20c9ac54</color>
+    <!-- E2F0FC //修改进度视频-->
+    <color name="public_bg_app_launch">#429b6f</color>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginBottom="@dimen/commom_20dp"
+    android:layout_marginLeft="@dimen/commom_10dp"
+    android:layout_marginRight="@dimen/commom_10dp"
+    android:background="@drawable/course_bg_learned_chapter"
+    android:gravity="center_vertical">
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chapter_num"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="15dp"-->
+    <!--android:text="第一章"-->
+    <!--android:textSize="@dimen/commom_15sp"-->
+    <!--android:textColor="@color/public_FF262626"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <TextView
+        android:id="@+id/tv_chapter_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="开始的开始我们都是孩子"
+        android:textColor="@color/public_FF262626"
+        android:textSize="15sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_ic_filter_up"/>
+
+    <!--占位-->
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

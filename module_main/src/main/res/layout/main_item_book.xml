@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="81dp"
+            android:layout_height="114dp" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_marginTop="@dimen/commom_4dp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="@dimen/commom_10dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--        </LinearLayout>-->
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:id="@+id/tv_title"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#20242a"
+        android:textSize="12sp" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textColor="@color/public_price"
+        android:textSize="12sp" />
+
+</LinearLayout>

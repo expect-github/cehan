@@ -1,0 +1,211 @@
+apply plugin: 'com.android.application'
+apply from: 'dist.gradle'
+apply plugin: 'com.ke.gson.plugin'
+
+def conf = androidV
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+apply plugin: 'pushplugin'
+
+pluginExt {
+    applicationId APPLICATION_ID
+    jiGuangExt {
+        JGQQShareKey = QQ_KEY
+        JGWxShareKey = WECHAT_KEY
+        JGQQShareSecret = QQ_SECRET
+        JGWxShareSecret = WECHAT_SECRET
+    }
+    uMengExt {
+        UMengKey = UM_KEY   //必填 test
+        UMengSecret = UM_SECRET      //必填
+
+    }
+}
+
+android {
+    compileSdkVersion conf.compileSdkVersion
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+        inner {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    defaultConfig {
+        applicationId APPLICATION_ID
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
+        minSdkVersion conf.minSdkVersion
+        targetSdkVersion conf.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        //打包时间
+        resConfigs "zh", "en"
+        manifestPlaceholders = [
+                PACKAGE_NAME: APPLICATION_ID,
+        ]
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+        buildConfigField "String", "PACKAGE_RES_NAME", "\"" + conf.packageName + "\""
+        buildConfigField "String", "WXAPI", "\"${WECHAT_KEY}\""
+        buildConfigField "String", "BYJ_DOMAIN", "\"${BJY_DOMAIN}\""
+//        buildConfigField "String", "BUGLY_APPID", "\"${BUGLY_APPID}\""
+
+
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro', 'x5proguard.pro'
+            debuggable false
+            signingConfig signingConfigs.release
+            multiDexKeepProguard file('./multidex-config.pro')
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            signingConfig signingConfigs.inner
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro', 'x5proguard.pro'
+            buildConfigField "String", "BASE_URL", "\"${baseurl.api}\""
+            buildConfigField "String", "BASE_H5_URL", "\"${baseurl.h5}\""
+
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility conf.sourceCompatibility
+        targetCompatibility conf.targetCompatibility
+    }
+
+//    splits {
+//        abi {
+//            enable true
+//            reset()
+//            include 'armeabi-v7a', 'armeabi'
+//            universalApk true
+//        }
+//    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    //这个是维度的意思
+    flavorDimensions "channel"
+    productFlavors {
+        //这个是默认渠道 根据首字母默认取的所以
+        wxTest {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BASE_URL", "\"${BASE_URL_API_TEST}\""
+            buildConfigField "String", "BASE_H5_URL", "\"${BASE_URL_H5_TEST}\""
+            dimension "channel"
+
+        }
+        wxDemo {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BASE_URL", "\"${BASE_URL_API_DEMO}\""
+            buildConfigField "String", "BASE_H5_URL", "\"${BASE_URL_H5_DEMO}\""
+
+            dimension "channel"
+        }
+        wxRelease {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "String", "BASE_URL", "\"${BASE_URL_API_RELEASE}\""
+            buildConfigField "String", "BASE_H5_URL", "\"${BASE_URL_H5_RELEASE}\""
+
+            dimension "channel"
+
+        }
+    }
+
+    def build_apk_flavors = ""
+    build_apk_flavors += FLAVORS_DEMO.toBoolean() ? "wxDemo" : ""
+    build_apk_flavors += FLAVORS_TEST.toBoolean() ? "wxTest" : ""
+    build_apk_flavors += FLAVORS_RELEASE.toBoolean() ? "wxRelease" : ""
+    println("build_apk_flavors-->" + build_apk_flavors)
+    variantFilter { variant ->
+        def flavor_name = variant.flavors*.name[0]
+        //names [wxTest]
+        println(flavor_name)
+        if (build_apk_flavors.contains(flavor_name)) {
+            setIgnore(false)
+        } else {
+            setIgnore(true)
+        }
+
+    }
+
+    productFlavors.all {
+        flavor ->
+            buildConfigField "String", "CHANNEL_ID", "\"${name}\""
+            manifestPlaceholders = [CHANNEL_ID: "${name}"]
+
+    }
+    packagingOptions {
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+        pickFirst 'lib/armeabi/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+ 
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+//    android {
+//        sourceSets {
+//            main.jniLibs.srcDirs = ['libs']
+//        }
+//    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('src\\main\\libs\\bugly_crash_release.jar')
+
+//    implementation fileTree(dir: 'src\\main\\libs', include: ['*.aar', '*.jar'], exclude: [])
+
+    testImplementation "junit:junit:$deps.junit"
+
+    if (!isModule.toBoolean()) {
+        implementation project(":module_main")
+        implementation project(":module_course")
+        implementation project(":module_distribution")
+        implementation project(":module_download")
+        implementation project(":module_assemble")
+    }
+
+    annotationProcessor "com.google.dagger:dagger-android-processor:$deps.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$deps.dagger2Version"
+    debugImplementation 'com.didichuxing.doraemonkit:doraemonkit:2.0.1'
+    releaseImplementation 'com.didichuxing.doraemonkit:doraemonkit-no-op:2.0.2'
+    implementation "com.nj.baijiayun:pushCompiler:$baijiayun.pushCompiler"
+    annotationProcessor "com.nj.baijiayun:pushCompiler:$baijiayun.pushCompiler"
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+
+//    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+//    implementation "com.tencent.bugly:crashreport:$bugly.crash_jar"
+//    
+//    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+//    implementation "com.tencent.bugly:nativecrashreport:$bugly.crash_ndk"
+
+
+}

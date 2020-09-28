@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_oauth_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/view_oauth_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_15dp"
+        android:text="@string/public_oauth_login"
+        android:textColor="#FFB7B7B7"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view_wechat_parent"
+        android:layout_width="@dimen/commom_26dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view_qq_parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_oauth_login_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+
+        app:layout_goneMarginStart="@dimen/dp_0"
+        android:layout_marginStart="58dp"
+        android:id="@+id/view_qq_parent"
+        android:layout_width="@dimen/commom_26dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/view_wechat_parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_oauth_login_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+
+        android:id="@+id/view_mid_line"
+        android:layout_width="@dimen/commom_1dp"
+        android:layout_height="@dimen/commom_14dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/public_E8E8E8"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_qq"
+        android:layout_width="@dimen/commom_26dp"
+        android:layout_height="@dimen/commom_26dp"
+        android:layout_marginTop="@dimen/commom_20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_qq_parent"
+        app:layout_constraintStart_toStartOf="@+id/view_qq_parent"
+        app:layout_constraintTop_toTopOf="@+id/view_qq_parent"
+        app:srcCompat="@drawable/public_ic_qq" />
+
+    <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_width="@dimen/commom_26dp"
+        android:layout_height="@dimen/commom_26dp"
+        android:layout_marginTop="@dimen/commom_20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_wechat_parent"
+        app:layout_constraintStart_toStartOf="@+id/view_wechat_parent"
+        app:layout_constraintTop_toTopOf="@+id/view_wechat_parent"
+        app:srcCompat="@drawable/public_ic_wechat" />
+
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:text="@string/public_qq"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="@dimen/commom_12dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_qq"
+        app:layout_constraintStart_toStartOf="@+id/iv_qq"
+        app:layout_constraintTop_toBottomOf="@+id/iv_qq" />
+
+    <TextView
+        android:id="@+id/tv_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_9dp"
+        android:text="@string/public_wechat"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="@dimen/commom_12dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_wechat"
+        app:layout_constraintStart_toStartOf="@+id/iv_wechat"
+        app:layout_constraintTop_toBottomOf="@+id/iv_wechat" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_qq,tv_qq"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_wechat,tv_wechat"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_other_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view_oauth_login_text,public_view,public_view1"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/public_view"
+        android:layout_width="100dp"
+
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/commom_10dp"
+        android:layout_marginEnd="@dimen/commom_40dp"
+        android:background="@color/common_item_line"
+        app:layout_constraintBottom_toBottomOf="@+id/view_oauth_login_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_oauth_login_text"
+        app:layout_constraintTop_toTopOf="@+id/view_oauth_login_text" />
+
+    <View
+        android:id="@+id/public_view1"
+        android:layout_width="100dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/commom_40dp"
+        android:layout_marginEnd="@dimen/commom_10dp"
+        android:background="@color/common_item_line"
+        app:layout_constraintBottom_toBottomOf="@+id/view_oauth_login_text"
+        app:layout_constraintEnd_toStartOf="@+id/view_oauth_login_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_oauth_login_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

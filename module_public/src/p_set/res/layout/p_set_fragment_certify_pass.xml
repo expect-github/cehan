@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/public_imageview2"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/commom_8dp"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:scaleType="fitXY"
+        android:src="@drawable/p_set_certify_pass_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/public_imageview2"
+        app:srcCompat="@drawable/public_ic_head_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/commom_13dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        tools:text="程小样" />
+
+    <ImageView
+        android:id="@+id/public_imageview3"
+        android:layout_width="@dimen/commom_29dp"
+        android:layout_height="@dimen/commom_18dp"
+        android:layout_marginStart="@dimen/commom_9dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        app:srcCompat="@drawable/p_set_certified" />
+
+    <TextView
+        android:id="@+id/tv_id_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="320***********0088" />
+
+    <ImageView
+        android:id="@+id/public_imageview6"
+        android:layout_width="11dp"
+        android:layout_height="@dimen/commom_14dp"
+        android:layout_marginBottom="@dimen/commom_34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/public_imageview2"
+        app:layout_constraintStart_toStartOf="@+id/iv_head"
+        app:srcCompat="@drawable/p_set_certify_pass_protect" />
+
+    <TextView
+        android:id="@+id/public_textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="个人隐私信息安全保障中"
+        android:textColor="#B3ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/public_imageview6"
+        app:layout_constraintStart_toEndOf="@+id/public_imageview6"
+        app:layout_constraintTop_toTopOf="@+id/public_imageview6" />
+
+    <ImageView
+        android:id="@+id/public_imageview7"
+        android:layout_width="@dimen/commom_14dp"
+        android:layout_height="@dimen/commom_14dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/public_textview4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p_set_question_to_cs" />
+
+    <TextView
+        android:id="@+id/public_textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:text="如有疑问请联系客服"
+        app:layout_constraintBottom_toBottomOf="@+id/public_imageview7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/public_imageview7"
+        app:layout_constraintTop_toTopOf="@+id/public_imageview7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

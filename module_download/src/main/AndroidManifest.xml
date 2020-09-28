@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nj.baijiayun.module_download">
+    <application>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.MyDownloadedActivity"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.DownloadedListActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.DownloadingListActivity"/>
+
+    </application>
+</manifest>

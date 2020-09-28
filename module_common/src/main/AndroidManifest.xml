@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nj.baijiayun.module_common">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        tools:replace="android:networkSecurityConfig"
+        android:networkSecurityConfig="@xml/common_network_security_config">
+        <activity android:name=".demo.DemoActivity">
+        </activity>
+        <!--<activity  android:name=".base.BaseWebViewActivity"/>-->
+
+        <provider
+            android:name="com.tencent.smtt.utils.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provide_x5_file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

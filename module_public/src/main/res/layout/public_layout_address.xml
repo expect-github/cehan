@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/public_ic_item_address"
+        android:layout_width="11dp"
+        android:layout_height="11dp"/>
+
+    <TextView
+        android:lines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_address"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="南京市雨花区怡化中心12楼南京市雨花区怡化中心12楼"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        />
+</LinearLayout>

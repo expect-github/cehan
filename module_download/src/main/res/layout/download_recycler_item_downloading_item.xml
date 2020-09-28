@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cb_delete"
+        android:scaleType="fitXY" />
+
+    <TextView
+        tools:text="雅思七日入门（二）
+"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/iv_type"
+        android:textColor="@color/common_main_text_color_title"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/iv_type"
+        android:max="100"
+        android:progress="3"
+        android:progressDrawable="@drawable/download_pb" />
+
+    <TextView
+        tools:text="未开始"
+        android:id="@+id/tv_download_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_download"
+        android:layout_alignLeft="@id/pb_download"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/iv_type"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/common_main_text_color_subcontent"
+        android:textSize="10sp" />
+
+    <TextView
+        tools:text="12.36M/376.27M"
+        android:id="@+id/tv_download_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_download"
+        android:layout_alignRight="@id/pb_download"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/common_main_text_color_subcontent"
+        android:textSize="10sp" />
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色 但是收到common_main_color影响   -->
+    <color name="design_system_main">@color/common_main_color</color>
+    <color name="design_system_bg_white">#ffffff</color>
+    <color name="design_system_bg_grey">#f7f7f7</color>
+    <color name="design_common_line_1">#ededed</color>
+    <color name="design_common_line_2">#e5e5e5</color>
+    <color name="design_common_line_3">#f7f7f7</color>
+    <color name="design_common_info">#158eff</color>
+    <color name="design_common_success">#13cc59</color>
+    <color name="design_common_warning">#ff2d28</color>
+    <color name="design_common_hint">#ffd042</color>
+    <color name="design_text_link">#158eff</color>
+    <color name="design_text_select">#f0000000</color>
+    <color name="design_text_main_import">#f0000000</color>
+    <color name="design_text_stress">@color/design_text_select</color>
+    <color name="design_text_title">#333333</color>
+    <color name="design_text_import">@color/design_text_title</color>
+    <color name="design_text_main">@color/design_text_title</color>
+    <color name="design_text_normal">#666666</color>
+    <color name="design_text_support">#999999</color>
+    <color name="design_text_tag">@color/design_text_support</color>
+    <color name="design_text_hint">#bfbfbf</color>
+
+    <!--渐变色是从左到右默认，注意跟设计图的代码是相反的 设计图默认旋转度数不一样 start end 以实际从左到右   -->
+
+    <!--渐变-->
+    <color name="design_start_color">#FFFF7633</color>
+    <!--指示器-->
+    <color name="design_indicator_start_color">#FFFF9676</color>
+    <color name="design_end_color">@color/common_main_color</color>
+    <!--拼团倒计时栏目-->
+    <color name="design_assemble_left_time_end">#FF5757</color>
+    <color name="design_assemble_left_time_start">#FF5757</color>
+    <!--签到-->
+    <color name="design_sign_start">#FFFFD156</color>
+    <color name="design_sign_end">#FFFFAA54</color>
+    <color name="design_info">#FF5757</color>
+    <!--主色-->
+    <color name="design_main_translate_bg">#19fc5623</color>
+    <color name="design_main_no_translate_bg">#fff2ed</color>
+    <!-- 主色-->
+    <color name="design_btn_basic_main_unable">#1A4169FF</color>
+    <color name="design_text_unable">#bfbfbf</color>
+    <!--优惠券-->
+    <color name="design_coupon_can_get">#ffffc9bc</color>
+    <color name="design_coupon_un_can_get">#FFD9D9D9</color>
+    <color name="design_main_live_loading_end">#fff8a637</color>
+    <color name="design_main_live_loading_start">#ffedbc40</color>
+
+    <color name="design_main_live_un_start_start">#FF40E2DC</color>
+    <color name="design_main_live_un_start_end">#FF24CAF3</color>
+    <color name="design_main_live_end">#FFB3B3B3</color>
+
+    <!--我的页面数字-->
+    <color name="design_user_number">#FF1A1A1A</color>
+    <color name="design_price">#FF5757</color>
+    <color name="design_teacher_level">#FFC69C41</color>
+
+
+</resources>

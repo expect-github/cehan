@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="10dp"
+  >
+
+    <com.nj.baijiayun.basic.widget.RoundView
+        android:id="@+id/roundView"
+        android:layout_width="3dp"
+        android:layout_height="@dimen/commom_13dp"
+        android:layout_centerVertical="true"
+        app:basic_bgRound="@color/common_main_color"
+        app:basic_radiusRound="2dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/common_FF595959"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="学习动态"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="8dp"
+        android:layout_height="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:src="@drawable/common_arrow_right"
+        android:tint="@color/public_FF8C8C8C" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/commom_4dp"
+        android:layout_toStartOf="@id/iv_right"
+        android:text="更多"
+        android:textColor="#ff595959"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/public_no_login"
+        android:layout_width="179dp"
+        android:layout_height="129dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:text="请登录后查看相关内容"
+        android:textColor="@color/public_FFB7B7B7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="@dimen/commom_25dp"
+        android:id="@+id/nologin"
+        android:layout_width="88dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:background="@drawable/public_bg_main_color_round_4"
+        android:text="登陆/注册"
+        android:textColor="@android:color/white" />
+</LinearLayout>

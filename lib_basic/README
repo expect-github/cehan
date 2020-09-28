@@ -1,0 +1,4 @@
+这里存放无关业务的基础库
+AppManager 用来存储当前Activity堆栈
+
+permissions 下存放权限管理

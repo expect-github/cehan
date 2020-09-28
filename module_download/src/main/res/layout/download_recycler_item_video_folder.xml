@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:toos="http://schemas.android.com/tools"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:tint="@color/common_main_color"
+        android:src="@drawable/download_ic_down_folder"
+        android:id="@+id/iv_course"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/cb_delete"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:includeFontPadding="false"
+        toos:text="雅思语法精讲"
+        android:id="@+id/tv_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_course"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/iv_course"
+        android:textColor="@color/common_main_text_color_title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:includeFontPadding="false"
+        android:text="10个视频 | 100M复制"
+        android:id="@+id/tv_course_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_course"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/iv_course"
+        android:textColor="@color/common_main_text_color_subcontent"
+        android:textSize="10sp" />
+</RelativeLayout>

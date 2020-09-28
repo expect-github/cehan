@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nj.baijiayun.module_download">
+    <application>
+        <activity android:name=".ui.MyDownloadedActivity"/>
+    </application>
+</manifest>

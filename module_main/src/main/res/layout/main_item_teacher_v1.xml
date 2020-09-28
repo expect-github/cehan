@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/commom_18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/PublicTextListTitle"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginStart="@dimen/commom_18dp"
+        android:layout_toEndOf="@id/iv_head"
+        app:layout_constraintStart_toEndOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        tools:text="王晓晓" />
+
+    <TextView
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:gravity="center"
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/commom_16dp"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_toEndOf="@id/tv_name"
+        android:background="@drawable/main_bg_teacher_level"
+        android:textColor="@color/design_teacher_level"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        tools:text="高级讲师" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/PublicTextSupport"
+        android:layout_width="@dimen/dp_0"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/commom_11dp"
+        android:layout_marginEnd="@dimen/commom_18dp"
+        android:layout_toEndOf="@id/iv_head"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="师的介绍这里是讲师的介绍这里是讲师的介绍" />
+
+
+
+    <TextView
+        android:paddingTop="1dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:id="@+id/tv_is_oto"
+        android:text="约课"
+        android:background="@drawable/main_bg_is_oto"
+        android:textSize="@dimen/commom_11dp"
+        android:textColor="@color/white"
+        android:layout_width="40dp"
+        android:layout_height="@dimen/commom_16dp"
+        android:layout_marginEnd="@dimen/commom_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name">
+
+
+    </TextView>
+
+    <include
+        android:layout_marginEnd="@dimen/commom_18dp"
+        layout="@layout/public_layout_list_split_line"
+        android:layout_height="@dimen/design_list_line"
+        android:layout_width="@dimen/dp_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

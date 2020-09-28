@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--merge 换成ConstraintLayout 可查看预览-->
+
+    <TextView
+        android:textColor="@color/public_FF8C8C8C"
+        android:id="@+id/tv_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="优惠:" />
+
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_act_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/common_FF595959"
+        android:textSize="12sp"
+        android:lines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act"
+        app:layout_constraintEnd_toStartOf="@+id/tv_act_get"
+        app:layout_constraintStart_toEndOf="@+id/tv_act"
+        app:layout_constraintTop_toTopOf="@+id/tv_act"
+        tools:text="领取优惠券至少可减" />
+
+    <TextView
+        android:id="@+id/tv_act_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:textSize="12sp"
+        android:textColor="@color/public_FF8C8C8C"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act"
+        app:layout_constraintEnd_toStartOf="@+id/iv_act_go"
+        app:layout_constraintTop_toTopOf="@+id/tv_act"
+        tools:text="@string/public_get" />
+
+    <ImageView
+        android:tint="@color/public_FF8C8C8C"
+        android:id="@+id/iv_act_go"
+        android:layout_width="@dimen/commom_5dp"
+        android:layout_height="@dimen/commom_10dp"
+        android:src="@drawable/common_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_act" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

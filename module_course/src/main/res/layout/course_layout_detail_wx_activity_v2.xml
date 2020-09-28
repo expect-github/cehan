@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/commom_10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/commom_15dp">
+
+    <com.nj.baijiayun.module_course.ui.wx.courseDetail.ActivityItemView
+        android:id="@+id/view_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.nj.baijiayun.module_course.ui.wx.courseDetail.ActivityItemView
+        android:id="@+id/view_vip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.nj.baijiayun.module_course.ui.wx.courseDetail.ActivityItemView
+        android:id="@+id/view_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

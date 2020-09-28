@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="@dimen/commom_11dp"-->
+<!--    android:layout_marginRight="@dimen/commom_11dp"-->
+<!--    app:hl_shadowColor="#12000000"-->
+<!--    app:hl_shadowBackColor="@color/white"-->
+<!--    app:hl_cornerRadius="@dimen/commom_10dp"-->
+<!--    app:hl_shadowLimit="@dimen/commom_4dp">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_13dp"
+    android:layout_marginRight="@dimen/commom_13dp"
+    android:background="@drawable/public_bg_shadow"
+    android:minHeight="162dp">
+
+    <include layout="@layout/public_layout_course_no_cover_common" />
+
+    <include
+        android:id="@+id/split_line"
+        layout="@layout/common_layout_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/commom_1dp"
+        android:layout_marginTop="@dimen/commom_14dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_course_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+    <TextView
+        android:id="@+id/public_tv_sign_up_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/split_line"
+        app:layout_constraintTop_toBottomOf="@+id/split_line"
+        tools:text="2人已报名" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/public_price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/split_line"
+        app:layout_constraintTop_toBottomOf="@+id/split_line"
+        tools:text="4345" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price_unline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="12dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price_discount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_discount"
+        tools:text="¥800.00" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--</com.lihang.ShadowLayout>-->

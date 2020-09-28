@@ -1,0 +1,30 @@
+<resources>
+    <string name="download_my_downloaded">我的下载</string>
+    <string name="download_my_downloading">正在下载</string>
+    <string name="download_video">视频</string>
+    <string name="download_audio">音频</string>
+    <string name="download_file">图文</string>
+    <string name="download_library">文库</string>
+    <string name="download_course">课程</string>
+    <string name="download_downloading">正在缓存</string>
+
+    <string name="download_count_format">(%1$d)</string>
+    <string name="download_speed_format">%s/S</string>
+
+
+    <string name="download_folder_desc_format">%1$d个视频  丨  %2$s</string>
+    <string name="down_video_desc_format">%1$s  丨  %2$s</string>
+    <string name="down_size_format">%1$s / %2$s</string>
+    <string name="download_pause">暂停</string>
+    <string name="download_waiting">等待</string>
+
+
+    <string name="down_all_select">全选</string>
+    <string name="down_cancel_all_select">取消全选</string>
+    <string name="down_all_cancel">反选</string>
+    <string name="down_ok">确定</string>
+    <string name="down_cancel">取消</string>
+    <string name="down_delete">删除</string>
+    <string name="download_read_status_read">已读</string>
+    <string name="download_read_status_unread">未读</string>
+</resources>

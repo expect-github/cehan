@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="design_title_big">21dp</dimen>
+    <dimen name="design_title_big_19">19dp</dimen>
+    <dimen name="design_title_nav">17dp</dimen>
+    <dimen name="design_title_page">16dp</dimen>
+    <dimen name="design_title_list">15dp</dimen>
+    <dimen name="design_title_page_small">14dp</dimen>
+    <dimen name="design_content_import">16dp</dimen>
+    <dimen name="design_content_main">15dp</dimen>
+    <dimen name="design_content_normal">14dp</dimen>
+    <dimen name="design_content_support">13dp</dimen>
+    <dimen name="design_content_support_12">12dp</dimen>
+    <dimen name="design_content_copyright">12dp</dimen>
+    <dimen name="design_content_tag">12dp</dimen>
+    <dimen name="design_content_list_time">11dp</dimen>
+    <dimen name="design_content_tag_small">11dp</dimen>
+    <dimen name="design_content_small">12dp</dimen>
+    <dimen name="design_price">18dp</dimen>
+    <dimen name="design_price_mid_line">12dp</dimen>
+
+    <dimen name="design_indicator_text_selected">19dp</dimen>
+    <dimen name="design_indicator_text_un_selected">14dp</dimen>
+    <dimen name="design_list_line">0.5dp</dimen>
+
+</resources>

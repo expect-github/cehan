@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <com.nj.baijiayun.module_common.widget.MyViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50EAEAEA" />
+
+        <com.nj.baijiayun.module_common.widget.JPTabBar xmlns:jp="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            jp:TabIconSize="@dimen/commom_25dp"
+            jp:TabIconNoTextSize="@dimen/commom_28dp"
+            jp:TabGradientEnable="true"
+            jp:TabIconFilter="true"
+            jp:TabNormalColor="@color/common_main_text_color_accent"
+            jp:TabSelectColor="@color/common_main_color"
+            jp:TabTextSize="11sp" />
+    <!--</RelativeLayout>-->
+</merge>

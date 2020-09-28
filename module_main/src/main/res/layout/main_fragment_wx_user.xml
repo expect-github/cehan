@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nsv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/main_view3"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_iv"/>
+
+        <ImageView
+            android:background="@color/white"
+            android:id="@+id/bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_bg_user_info"
+            app:layout_constraintDimensionRatio="h,1125:603"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <View
+            android:id="@+id/main_view2"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/commom_50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/common_F5F5F5"
+            app:layout_constraintEnd_toStartOf="@+id/tv_appoint_num"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_course_num"
+            app:layout_constraintTop_toTopOf="@+id/tv_course_num"/>
+
+        <LinearLayout
+            android:id="@+id/view_un_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/main_ic_unlogin_head"
+                   />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/main_login_or_register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commom_17sp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/commom_20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="true">
+
+                <com.nj.baijiayun.basic.widget.RoundImageView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    app:round_type="circle"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/card"
+                android:layout_marginLeft="@dimen/commom_24dp"
+                android:layout_toRightOf="@+id/card"
+                android:textColor="@color/white"
+                android:textSize="@dimen/commom_17sp"
+                tools:text="李木木"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@+id/card"
+                android:layout_marginLeft="@dimen/commom_24dp"
+                android:layout_toRightOf="@+id/card"
+                android:background="@drawable/main_bg_vip"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/commom_12dp"
+                    android:layout_height="@dimen/commom_12dp"
+                    android:layout_marginLeft="@dimen/commom_8dp"
+                    android:src="@drawable/main_ic_vip"/>
+
+                <TextView
+                    android:id="@+id/tv_vip_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/commom_6dp"
+                    android:text="@string/main_vip_append"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/commom_4dp"
+                    android:layout_marginRight="@dimen/commom_9dp"
+                    android:src="@drawable/common_arrow_right"
+                    android:tint="@color/white"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/commom_14dp"
+                android:src="@drawable/common_arrow_right"
+                android:tint="@color/white"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_course_num"
+            style="@style/MainUserNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0"
+            android:textColor="#FF5BB8F5"
+            app:layout_constraintEnd_toStartOf="@+id/main_view2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_iv"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/MainUserNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="我的学习"
+            app:layout_constraintEnd_toEndOf="@+id/tv_course_num"
+            app:layout_constraintStart_toStartOf="@+id/tv_course_num"
+            app:layout_constraintTop_toBottomOf="@+id/tv_course_num"/>
+
+        <TextView
+            android:id="@+id/main_textview5"
+            style="@style/MainUserHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="已购课程学习"
+            app:layout_constraintEnd_toEndOf="@+id/tv_content"
+            app:layout_constraintStart_toStartOf="@+id/tv_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content"/>
+
+        <TextView
+            android:id="@+id/tv_appoint_num"
+            style="@style/MainUserNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FF6563A4"
+            app:layout_constraintEnd_toStartOf="@+id/main_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/main_view2"
+            app:layout_constraintTop_toTopOf="@+id/tv_course_num"/>
+
+        <TextView
+            android:id="@+id/main_textview7"
+            style="@style/MainUserNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="我的预约"
+            app:layout_constraintEnd_toEndOf="@+id/tv_appoint_num"
+            app:layout_constraintStart_toStartOf="@+id/tv_appoint_num"
+            app:layout_constraintTop_toBottomOf="@+id/tv_appoint_num"/>
+
+        <TextView
+            android:id="@+id/main_textview8"
+            style="@style/MainUserHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="一对一老师预约"
+            app:layout_constraintEnd_toEndOf="@+id/main_textview7"
+            app:layout_constraintStart_toStartOf="@+id/main_textview7"
+            app:layout_constraintTop_toBottomOf="@+id/main_textview7"/>
+
+        <TextView
+            android:id="@+id/tv_gold_num"
+            style="@style/MainUserNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/common_main_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/main_view"
+            app:layout_constraintTop_toTopOf="@+id/tv_appoint_num"/>
+
+        <TextView
+            android:id="@+id/main_textview10"
+            style="@style/MainUserNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="本周课时"
+            app:layout_constraintEnd_toEndOf="@+id/tv_gold_num"
+            app:layout_constraintStart_toStartOf="@+id/tv_gold_num"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gold_num"/>
+
+        <TextView
+            android:id="@+id/main_textview11"
+            style="@style/MainUserHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="学习日历"
+            app:layout_constraintEnd_toEndOf="@+id/main_textview10"
+            app:layout_constraintStart_toStartOf="@+id/main_textview10"
+            app:layout_constraintTop_toBottomOf="@+id/main_textview10"/>
+
+        <View
+            android:id="@+id/main_view"
+            android:layout_width="@dimen/commom_1dp"
+            android:layout_height="@dimen/commom_50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/common_F5F5F5"
+            app:layout_constraintBottom_toBottomOf="@+id/main_textview11"
+            app:layout_constraintEnd_toStartOf="@+id/tv_gold_num"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_appoint_num"
+            app:layout_constraintTop_toTopOf="@+id/tv_gold_num"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/commom_15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_view3"/>
+
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_course_num,tv_content,main_textview5" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_appoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_appoint_num,main_textview7,main_textview8"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_gold_num,main_textview10,main_textview11"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+

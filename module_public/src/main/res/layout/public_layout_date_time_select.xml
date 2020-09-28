@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg"
+    >
+
+
+    <LinearLayout
+
+        android:id="@+id/public_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_bg_white_round_4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commom_13dp"
+            android:layout_marginTop="@dimen/commom_15dp"
+            android:text="@string/public_date"
+            android:textColor="@color/public_ff595959"
+            android:textSize="12sp"
+            />
+
+        <com.nj.baijiayun.module_public.widget.simple_calendar.SimpleCalendarView
+            android:id="@+id/simple_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/commom_15dp"
+            />
+
+
+        <!--<com.haibin.calendarview.CalendarView-->
+        <!--android:id="@+id/calendarView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--app:calendar_height="44dp"-->
+        <!--app:current_month_text_color="@color/main_text_color_title"-->
+        <!--app:day_text_size="16sp"-->
+        <!--app:month_view="com.nj.baijiayun.module_common.widget.MeiZuMonthView"-->
+        <!--app:month_view_show_mode="mode_only_current"-->
+        <!--app:scheme_theme_color="@color/main_color"-->
+        <!--app:selected_text_color="@color/white"-->
+        <!--app:selected_theme_color="@color/main_color"-->
+        <!--app:week_background="@color/white"-->
+        <!--app:week_bar_view="com.nj.baijiayun.module_public.widget.calendar.MeiZuWeekBar"-->
+        <!--app:week_start_with="mon"-->
+        <!--app:week_text_color="#111"-->
+        <!--app:week_view="com.nj.baijiayun.module_public.widget.calendar.MeizuWeekView"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/public_bg_white_round_4"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/public_linearlayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/commom_13dp"
+            android:layout_marginTop="@dimen/commom_15dp"
+            android:text="@string/public_date_range"
+            android:textColor="@color/public_ff595959"
+            android:textSize="12sp"
+            />
+
+        <include
+            android:layout_marginTop="@dimen/commom_15dp"
+            layout="@layout/public_layout_time_range"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/commom_32dp"
+            android:layout_marginLeft="@dimen/commom_13dp"
+            android:layout_marginRight="@dimen/commom_13dp"/>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/common_layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/public_include"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <include
+        android:id="@+id/public_include"
+        layout="@layout/public_layout_filter_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/tv_vip"
+    android:textSize="@dimen/commom_14sp"
+    android:gravity="center"
+    android:text="课程中有会员课，会员课将于2019年09月08日过期"
+    android:textColor="@color/public_FF8C8C8C"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

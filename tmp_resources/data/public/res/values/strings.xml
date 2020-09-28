@@ -1,0 +1,139 @@
+<resources>
+    <!--这里是app的名称-->
+    <string name="public_phone">手机号</string>
+    <string name="public_phone_hint">请输入手机号</string>
+    <string name="public_pwd">密码</string>
+    <string name="public_pwd_hint">请输入密码</string>
+    <string name="public_login">登录</string>
+    <string name="public_login_success">登录成功</string>
+    <string name="public_forget_pwd">忘记密码?</string>
+    <string name="public_code_hint">请输入短信验证码</string>
+    <string name="public_new_pwd_hint">请输入新密码</string>
+    <string name="public_new_pwd_again_hint">请再次输入新密码</string>
+    <string name="public_pwd_again_hint">请再次输入密码</string>
+    <string name="public_forget_pwd_btn">确认修改</string>
+    <string name="public_mobile">手机号</string>
+    <string name="public_code">验证码</string>
+    <string name="public_new_pwd">新密码</string>
+    <string name="public_new_pwd_confirm">确认新密码</string>
+
+    <string name="public_get_code_fmt">重新发送（%1$d）</string>
+    <string name="public_activity_title_forget_pwd">找回密码</string>
+    <string name="public_code_login">注册/验证码登录</string>
+    <string name="public_oauth_login">其他方式登录</string>
+    <string name="public_wechat">微信</string>
+    <string name="public_qq">QQ</string>
+    <string name="public_login_by_pwd">使用密码登录</string>
+    <string name="public_date_range">时段</string>
+    <string name="public_date">日期</string>
+    <string name="public_reset">重置</string>
+    <string name="public_today">今天</string>
+    <string name="public_start_time">开始时间</string>
+    <string name="public_end_time">结束时间</string>
+    <string name="public_follow">关注</string>
+    <string name="public_register_auto">*未注册的手机号将自动注册</string>
+    <string name="public_submit">提交</string>
+    <string name="public_skip">跳过</string>
+    <string name="public_set_pwd">设置密码</string>
+    <string name="public_bind_phone">绑定手机号</string>
+    <string name="public_bind_phone_success">绑定手机号成功</string>
+    <string name="public_renew">续费</string>
+    <string name="public_get">领取</string>
+    <string name="public_opening">开通</string>
+    <string name="public_vip">会员</string>
+    <string name="public_format_coupon_fixed_days">自领取之日起{0}天内有效</string>
+    <string name="public_format_coupon_date_range">有效至：{0} - {1}</string>
+    <string name="public_check_phone">请输入手机号</string>
+    <string name="public_check_pwd">请输入密码</string>
+    <string name="public_check_pwd_again">请输入确认密码</string>
+    <string name="public_check_code">请输入验证码</string>
+
+    <string name="public_share_img_create">生成海报</string>
+    <string name="public_share_img_save">保存图片</string>
+
+
+    <string-array name="public_chinese_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="public_chinese_week_string_simple_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string-array name="public_simple_calendar_array">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+    <string name="public_take_from_album">从手机相册选择</string>
+    <string name="public_login_protocol">我同意用户注册协议和隐私保护协议</string>
+    <!--<string name="public_login_protocol_name">用户隐私协议</string>-->
+    <string name="public_login_register_protocol">用户注册协议</string>
+    <string name="public_login_protect_protocol">隐私保护协议</string>
+
+
+    <string name="public_activity_title_set_pwd">设置密码</string>
+    <string name="public_activity_title_about">关于我们</string>
+    <string name="public_activity_title_current_version">当前版本</string>
+    <string name="public_activity_title_feedback">意见反馈</string>
+    <string name="public_activity_title_settings">设置</string>
+    <string name="public_logoff">注销</string>
+
+    <string name="public_clear_cache">清除缓存</string>
+
+    <string name="public_collect_status_collected">已收藏</string>
+    <string name="public_collect_status_un_collect">收藏</string>
+    <string name="public_collect_success">收藏成功</string>
+    <string name="public_collect_cancel_success">取消收藏成功</string>
+    <string name="public_coupon_rule">使用规则说明</string>
+    <string name="public_logoff_confirm">确认注销</string>
+    <string name="public_logoff_giveup">放弃</string>
+    <string name="public_agree_logoff">我理解并同意，仍要注销</string>
+    <string name="public_activity_title_logoff">注销账号</string>
+    <string name="public_activity_title_logoff_confirm">确认注销</string>
+    <string name="public_activity_account_verify">账号验证</string>
+    <string name="public_fmt_bind_phone">当前绑定的手机号：{0}</string>
+    <string name="public_logoff_title">注销当前账号</string>
+    <string name="public_logoff_hint">注销账号为不可恢复操作，注销账号后您将无法找回本账号，以及本账号相关的内容与信息；</string>
+    <string name="public_send_sms_code_success">发送成功</string>
+    <string name="public_pwd_input_text_hint">6–20位英文、数字、符号，区分大小写</string>
+    <string name="public_long_press_save">长按图片保存至相册</string>
+    <string name="public_i_known">我知道了</string>
+    <string name="public_limit">您已被限制访问，请联系管理员</string>
+    <string name="public_app_service">客服</string>
+
+    <string name="public_go_certified">去认证</string>
+    <string name="public_has_certified">已认证</string>
+    <string name="public_activity_title_certifie">实名认证</string>
+    <string name="public_activity_title_supervision">家长监管</string>
+    <string name="public_real_name">真实姓名</string>
+    <string name="public_real_name_hint">请填写学员真实姓名</string>
+    <string name="public_id_number">身份证号</string>
+    <string name="public_id_number_hint">请填写学员身份证号码</string>
+    <string name="public_id_number_input_warning">为保障个人信息安全，需要您在平台进行实名认证 ，认证通过 后相关信息将不能修改，如有问题请联系客服</string>
+    <string name="public_id_number_confirm">身份信息认证后将无法修改，请确 认信息填写是否正确。</string>
+    <string name="public_supervision">为了帮助学生使用手机时更加专注，避免其他软件的打扰，特提供家长监管功能的设置教程。请根据您的手机品牌，查看对应教程、设置家长监管。</string>
+    <string name="public_course_type">@string/design_course_type</string>
+<!--    "综合排序", "最新", "最热", "价格升序", "价格降序"-->
+    <string name="public_sort_common">综合</string>
+    <string name="public_sort_new">最新</string>
+    <string name="public_sort_hot">最热</string>
+    <string name="public_sort_price_asc">价格升序</string>
+    <string name="public_sort_price_desc">价格降序</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:hl_cornerRadius="@dimen/commom_20dp"
+    app:hl_leftShow="true"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:id="@+id/view_share_profit"
+    app:hl_shadowColor="#4dbfbfbf"
+    app:hl_shadowLimit="@dimen/commom_4dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/commom_40dp"
+        android:background="@drawable/course_bg_share_distribution"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="13dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:layout_width="@dimen/commom_15dp"
+            android:layout_height="@dimen/commom_15dp"
+            android:src="@drawable/course_ic_share_distribution" />
+
+        <TextView
+            android:id="@+id/tv_share_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:textColor="@color/public_price"
+            tools:text="分享赚0.02" />
+
+    </LinearLayout>
+
+</com.lihang.ShadowLayout>

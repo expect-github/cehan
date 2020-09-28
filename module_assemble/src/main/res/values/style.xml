@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_assemble_number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/commom_16dp"-->
+<!--        android:layout_marginTop="@dimen/commom_52dp"-->
+<!--        android:background="@drawable/assemble_shap_assemble_number"-->
+<!--        android:gravity="center"-->
+<!--        android:includeFontPadding="false"-->
+<!--        android:paddingLeft="4dp"-->
+<!--        android:paddingRight="4dp"-->
+<!--        android:textColor="@color/common_main_color"-->
+<!--        android:textSize="@dimen/design_content_tag_small"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tv_course_name"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/iv_cover"-->
+<!--        tools:text="2人团" />-->
+
+    <style name="AssembleJoin">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/assemble_shap_assemble_number</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_main_color</item>
+        <item name="android:textSize">@dimen/design_content_tag_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+</resources>

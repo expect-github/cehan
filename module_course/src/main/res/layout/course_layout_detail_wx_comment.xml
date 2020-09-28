@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/commom_15dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="@dimen/commom_13dp"
+    android:paddingRight="@dimen/commom_15dp">
+
+
+    <TextView
+        android:id="@+id/course_textview"
+        style="@style/CourseDetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_detail_title_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <fragment
+        android:id="@+id/frameLayout"
+        android:name="com.nj.baijiayun.module_course.ui.fragment.CourseCommentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/course_textview"
+        app:layout_constraintTop_toBottomOf="@+id/course_textview"/>
+</LinearLayout>

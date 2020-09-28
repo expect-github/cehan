@@ -1,0 +1,38 @@
+{
+  "userItemList": [
+    {
+      "group": 2,
+      "icon": "main_ic_course_order",
+      "title": "课程订单",
+      "url": "/order?order_type=2",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 2,
+      "icon": "main_ic_vip_order",
+      "title": "会员订单",
+      "url": "/order?order_type=3",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 2,
+      "icon": "main_ic_appoint_order",
+      "title": "约课订单",
+      "url": "/order?order_type=1",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 2,
+      "icon": "main_ic_books",
+      "title": "图书订单",
+      "url": "/order?order_type=4",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    }
+  ]
+}
+
+

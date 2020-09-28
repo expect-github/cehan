@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_2dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/course_bg_outline_split" />
+
+
+    <ImageView
+        android:id="@+id/iv_dir"
+        android:layout_width="@dimen/commom_10dp"
+        android:layout_height="@dimen/commom_10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/common_ic_filter_up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_dir"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="@dimen/commom_2dp"
+            android:gravity="center"
+            android:id="@+id/tv_chapter_num"
+            android:layout_width="@dimen/commom_20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:src="@drawable/oline_chapter"
+            />
+
+        <TextView
+            android:id="@+id/tv_chapter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_15sp"
+            android:textStyle="bold"
+            tools:text="1、第一章 序章" />
+    </LinearLayout>
+
+</RelativeLayout>

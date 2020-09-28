@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="course_fff6f6f6">#f6f6f6</color>
+    <color name="course_white">#ffffff</color>
+    <color name="course_date_color">#EA7A2F</color>
+
+    <color name="course_type_start_color">#FFFF8552</color>
+    <color name="course_type_end_color">#FFFF526F</color>
+    <color name="course_type_triangle">#FFDA2748</color>
+
+</resources>

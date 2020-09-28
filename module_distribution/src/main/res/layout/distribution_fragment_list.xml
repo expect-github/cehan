@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.nj.baijiayun.basic.widget.attrtab.TabIndicatorView
+        android:id="@+id/tabIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_40dp"
+        android:background="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_multstatus" />
+
+    </FrameLayout>
+
+</LinearLayout>

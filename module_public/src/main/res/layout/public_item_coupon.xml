@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tv_amount_new"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/coupon_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.nj.baijiayun.module_public.widget.PriceTextView
+            android:layout_marginRight="@dimen/dp_5"
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:includeFontPadding="false"
+            android:text="50"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_marginRight="@dimen/commom_5dp"
+            android:id="@+id/tv_amount_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:includeFontPadding="false"
+            android:text="满100可用"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_root"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:background="@drawable/public_bg_coupon_canget"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_type_limitation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指定分类可用"
+            android:textColor="@color/public_coupon_get_new"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="75dp"
+            android:layout_height="@dimen/commom_30dp"
+            android:gravity="center"
+            android:text="立即领取"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="@drawable/pubile_coupon_sel_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/view_dotted"
+            android:layout_width="81dp"
+            android:layout_height="0dp"
+            android:background="@drawable/public_dotted_line_coupon_can_get"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginTop="@dimen/commom_8dp"
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效至：2019.07.08 - 2019.07.09"
+            android:textColor="#999999"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_type_limitation"
+            app:layout_constraintTop_toBottomOf="@+id/tv_type_limitation" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="109dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textColor="@color/public_coupon_get"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

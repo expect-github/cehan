@@ -1,0 +1,17 @@
+<resources>
+    <string name="common_tip">提示</string>
+    <string name="common_share_success">分享成功</string>
+    <string name="common_share_cancel">分享取消</string>
+    <string name="common_share_fail">分享失败</string>
+
+    <string name="common_delete">删除</string>
+    <string name="common_edit">编辑</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_search">搜索</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_save">保存</string>
+    <string name="common_login">登录</string>
+    <string name="common_exit_login">退出登录</string>
+    <string name="common_sendcode">获取验证码</string>
+
+</resources>

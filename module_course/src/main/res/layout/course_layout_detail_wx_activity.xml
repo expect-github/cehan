@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:maxHeight="79dp"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/commom_10dp"
+    android:paddingRight="@dimen/commom_15dp"
+    android:paddingLeft="@dimen/commom_15dp">
+
+
+    <TextView
+        android:id="@+id/tv_coupon"
+        android:layout_width="@dimen/commom_35dp"
+        android:layout_height="@dimen/commom_16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/public_bg_shap_vip_or_coupon"
+        android:gravity="center"
+        android:text="优惠"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_vip"
+        app:layout_constraintStart_toEndOf="@+id/tv_activity"
+        app:layout_constraintTop_toTopOf="@+id/tv_activity"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="领取优惠券至少可减"
+        android:textColor="@color/common_FF595959"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coupon"
+        app:layout_constraintStart_toEndOf="@+id/tv_coupon"
+        app:layout_constraintTop_toTopOf="@+id/tv_coupon"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/public_get"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coupon"
+        app:layout_constraintEnd_toStartOf="@+id/iv_coupon_go"
+        app:layout_constraintTop_toTopOf="@+id/tv_coupon"/>
+
+    <ImageView
+        android:id="@+id/iv_coupon_go"
+        android:layout_width="@dimen/commom_5dp"
+        android:layout_height="@dimen/commom_10dp"
+        android:src="@drawable/common_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coupon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_coupon"
+        />
+
+    <TextView
+        android:id="@+id/tv_vip"
+        android:layout_width="@dimen/commom_35dp"
+        android:layout_height="@dimen/commom_16dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/public_bg_shap_vip_or_coupon"
+        android:gravity="center"
+        android:text="VIP"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_coupon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupon"
+        />
+
+    <TextView
+        android:id="@+id/tv_vip_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="您的会员到期日为：2019年9月8日"
+        android:textColor="@color/common_FF595959"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vip"
+        app:layout_constraintEnd_toStartOf="@+id/tv_vip_get"
+        app:layout_constraintStart_toEndOf="@+id/tv_vip"
+        app:layout_constraintTop_toTopOf="@+id/tv_vip"/>
+
+    <TextView
+        android:id="@+id/tv_vip_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/public_renew"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vip_content"
+        app:layout_constraintEnd_toStartOf="@+id/iv_vip_go"
+        app:layout_constraintTop_toTopOf="@+id/tv_vip_content"/>
+
+    <ImageView
+        android:id="@+id/iv_vip_go"
+        android:layout_width="@dimen/commom_5dp"
+        android:layout_height="@dimen/commom_10dp"
+        android:src="@drawable/common_arrow_right"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_vip_get"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_vip_get"
+        />
+
+    <TextView
+
+        android:id="@+id/tv_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:includeFontPadding="false"
+        android:text="@string/course_detail_activity"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_coupon,tv_coupon_content,tv_coupon_get,iv_coupon_go,tv_coupon_price"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_vip,tv_vip_content,tv_vip_get,iv_vip_go"/>
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_coupon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/commom_4dp"
+        tools:text="80"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_coupon_content"
+        android:textColor="@color/public_orange"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coupon_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_coupon_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_coupon_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

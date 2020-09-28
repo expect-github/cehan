@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主色-->
+    <color name="common_main_color_tint">#80418EE7</color>
+
+
+    <color name="common_main_text_hint">#BEBEBE</color>
+
+    <color name="common_main_text_color">#333333</color>
+    <color name="common_main_text_color_accent">#BEBEBE</color>
+    <color name="common_main_text_color_title">#222222</color>
+    <color name="common_main_text_color_subtitle">#666666</color>
+    <color name="common_main_text_color_content">#999999</color>
+    <color name="common_main_text_color_subcontent">#D7D7D7</color>
+    <color name="common_main_text_color_desc">#D2d1d1</color>
+    <color name="common_main_line_color">#F5f5f5</color>
+
+    <color name="common_tab_text_selected">@color/common_main_color</color>
+    <color name="common_tab_text_unselected">#FF666666</color>
+
+
+    <!--筛选指示器-->
+    <color name="common_indicator_selected">@color/common_main_color</color>
+    <color name="common_indicator_default">#333333</color>
+
+
+
+    <!-- Customize your theme here. -->
+    <color name="colorPrimary">@color/common_main_color</color>
+    <color name="colorPrimaryDark">@color/common_main_color</color>
+    <color name="colorAccent">@color/common_main_color</color>
+
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="view_line">#E5E5E5</color>
+    <color name="main_color_bg">@android:color/white</color>
+
+    <color name="common_item_line">#EAEAEA</color>
+    <color name="color_F6F6F6">#FFF6F6F6</color>
+    <color name="color_f8f8f8">#fff8f8f8</color>
+    <color name="course_detail">#057350</color>
+    <color name="color_188eee">#188eee</color>
+    <color name="color_333333">#333333</color>
+    <color name="common_color_BFBFBF">#bfbfbf</color>
+    <color name="color_eceaea">#ECEAEA</color>
+    <color name="color_418ee7">#418EE7</color>
+    <color name="color_black">#000000</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_edebeb">#edebeb</color>
+    <color name="color_e9e9e9">#e9e9e9</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_e28e33">#e28e33</color>
+    <color name="common_FF595959">#FF595959</color>
+
+    <!--渐变按钮-->
+    <color name="common_start_color">@color/common_main_color</color>
+    <color name="common_center_color">@color/common_main_color</color>
+    <color name="common_end_color">@color/common_main_color</color>
+    <!--筛选的透明度黑色背景-->
+    <color name="common_bg_filter">#7f000000</color>
+    <!--筛选控件的颜色-->
+    <color name="colorSelect">@color/common_main_color</color>
+    <color name="colorUnSelect">@color/design_text_title</color>
+    <color name="colorTriangleUnSelect">@color/design_text_support</color>
+
+    <color name="common_F5F5F5">#F5F5F5</color>
+    <color name="common_646464">#646464</color>
+    <color name="common_item_right_content">#999999</color>
+
+
+</resources>

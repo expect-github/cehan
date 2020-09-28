@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_assemble_play"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_15dp"
+    android:layout_marginRight="@dimen/commom_15dp"
+    android:layout_marginTop="@dimen/commom_10dp"
+    android:layout_marginBottom="@dimen/commom_15dp"
+    android:background="@drawable/course_bg_assemble_down_time"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/team_pin_bg"
+        tools:ignore="MissingConstraints" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="168dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="@string/course_detail_title_assemble_play"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/commom_15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview2"-->
+<!--        style="@style/CourseAssembleStepNumberNew"-->
+<!--        android:layout_marginTop="61dp"-->
+<!--        android:text="1"-->
+<!--        android:textColor="@color/design_assemble_left_time_end"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/course_textview7"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview7"-->
+<!--        android:layout_width="91dp"-->
+<!--        android:layout_height="@dimen/commom_2dp"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        android:layout_marginEnd="6dp"-->
+<!--        android:background="@drawable/course_dotted_line_asssemble"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/course_textview2"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/course_textview3"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/course_textview2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/course_textview2" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview3"-->
+<!--        style="@style/CourseAssembleStepNumberNew"-->
+
+<!--        android:text="2"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/course_textview7"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/course_textview8"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/course_textview7"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/course_textview7" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview8"-->
+<!--        android:layout_width="91dp"-->
+<!--        android:layout_height="@dimen/commom_2dp"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        android:layout_marginEnd="6dp"-->
+<!--        android:background="@drawable/course_dotted_line_asssemble"-->
+<!--        android:text="3"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/course_textview3"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/course_textview6"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/course_textview3"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/course_textview3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview6"-->
+<!--        style="@style/CourseAssembleStepNumberNew"-->
+<!--        android:text="3"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/course_textview8"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/course_textview8"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/course_textview8" />-->
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview9"-->
+<!--        style="@style/CourseAssembleStepContentNew"-->
+<!--        android:text="@string/course_assemble_step1"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/course_textview2"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/course_textview2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/course_textview2" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview10"-->
+<!--        style="@style/CourseAssembleStepContentNew"-->
+
+<!--        android:text="@string/course_assemble_step2"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/course_textview3"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/course_textview7"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/course_textview3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/course_textview11"-->
+<!--        style="@style/CourseAssembleStepContentNew"-->
+<!--        android:text="@string/course_assemble_step3"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/course_textview6"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/course_textview6"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/course_textview6" />-->
+
+<!--    <ImageView-->
+<!--        android:src="@drawable/common_arrow_right"-->
+<!--        android:id="@+id/iv_assemble_play"-->
+<!--        android:paddingTop="@dimen/commom_20dp"-->
+<!--        android:paddingBottom="@dimen/commom_20dp"-->
+<!--        android:paddingRight="@dimen/commom_15dp"-->
+<!--        android:paddingLeft="@dimen/commom_15dp"-->
+<!--        android:layout_width="@dimen/commom_40dp"-->
+<!--        android:layout_height="@dimen/commom_50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

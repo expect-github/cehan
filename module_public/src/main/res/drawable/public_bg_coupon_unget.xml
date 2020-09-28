@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/design_coupon_un_can_get" />
+    <corners android:bottomRightRadius="@dimen/commom_15dp"
+        android:topRightRadius="@dimen/commom_15dp"/>
+</shape>

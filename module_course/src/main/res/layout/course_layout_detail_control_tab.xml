@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    app:tabPaddingStart="@dimen/commom_10dp"
+    app:tabPaddingEnd="@dimen/commom_10dp"
+    app:tabIndicatorColor="@color/transparent"
+    app:tabSelectedTextColor="@color/public_FF595959"
+    app:tabTextAppearance="@style/CourseTabLayoutTextStyle"
+    app:tabTextColor="@color/public_FFB7B7B7"/>
+

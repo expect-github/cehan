@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nj.baijiayun.sdk_player">
+
+    <application>
+        <activity
+            android:screenOrientation="landscape"
+            android:name=".ui.FullScreenVideoPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/FullScreenTheme"/>
+
+        <!--        <service android:name=".service.BjyBackGroupService"/>-->
+
+        <service android:name="com.lzf.easyfloat.service.FloatService" />
+
+    </application>
+
+</manifest>

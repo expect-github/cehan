@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/course_bg_learned_section_selected"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_section_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginTop="@dimen/commom_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.nj.baijiayun.basic.widget.RoundView
+            android:id="@+id/round_view"
+            android:layout_width="@dimen/commom_4dp"
+            android:layout_height="@dimen/commom_4dp"
+            app:basic_bgRound="@color/common_main_color"
+            app:basic_radiusRound="2dp" />
+
+
+        <TextView
+            android:id="@+id/tv_try_look"
+            android:visibility="gone"
+            android:layout_width="@dimen/commom_40dp"
+            android:layout_height="@dimen/commom_18dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/course_bg_try_look"
+            android:gravity="center"
+            android:text="试看 "
+            android:textColor="@color/white"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_start_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="[回放]"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="12sp"
+            app:layout_goneMarginStart="@dimen/commom_10dp" />
+
+        <TextView
+            android:id="@+id/tv_course_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:text="黎明前的黑暗（一）"
+            android:textColor="@color/common_FF595959"
+            android:textSize="12sp"
+            android:visibility="visible"
+            app:layout_goneMarginEnd="@dimen/commom_15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_download_parent"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/iv_download_status"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/course_ic_learned_download" />
+
+
+            <com.nj.baijiayun.basic.widget.CircleMultipleProgressView
+                android:id="@+id/prg_download"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                app:basic_circle_multiple_color="#FFEA7A2F,#FFEA7A2F"
+                app:basic_circle_multiple_direction="1,1"
+                app:basic_circle_multiple_is_fill="0,1"
+                app:basic_circle_multiple_progress="100,0"
+                app:basic_circle_multiple_round_is_need="0,0"
+                app:basic_circle_multiple_starting_degree="-90,-90"
+                app:basic_circle_multiple_stroke_width="1,1" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_below="@id/ll_section_name"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+
+        android:id="@+id/tv_teacher_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/commom_29dp"
+        android:layout_marginTop="8dp"
+        android:text="张三 5月20日 13:00 - 14:00"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="12sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_teacher_and_time"
+        android:layout_marginLeft="@dimen/commom_29dp"
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_marginRight="24dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/commom_18dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone"
+
+        app:srcCompat="@drawable/course_ic_learned_play" />
+
+    <include
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/commom_29dp"
+        layout="@layout/course_layout_work_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv"
+        android:layout_marginTop="@dimen/commom_9dp"
+        android:layout_marginEnd="@dimen/commom_15dp" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/course_layout_progress_base_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_info"
+        android:layout_marginLeft="@dimen/commom_15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/commom_15dp"
+        android:layout_marginBottom="@dimen/commom_10dp" />
+
+
+    <View
+        android:id="@+id/view_download_placeholder"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commom_15dp"
+        android:gravity="center">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@drawable/public_logoff_bg_left_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:text="@string/public_logoff_title"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@drawable/public_logoff_bg_right_line" />
+
+    </LinearLayout>
+
+    <TextView
+        android:lineSpacingExtra="@dimen/commom_10dp"
+        android:id="@+id/tv_hint"
+        android:layout_marginTop="@dimen/commom_15dp"
+        android:paddingTop="@dimen/commom_10dp"
+        android:paddingBottom="@dimen/commom_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/commom_15dp"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:background="@drawable/public_logoff_bg_hint"
+        android:paddingLeft="@dimen/commom_15dp"
+        android:paddingRight="@dimen/commom_15dp"
+        android:text="@string/public_logoff_hint"
+        android:textColor="#ff5b6066"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/commom_20dp"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/PublicButtonStroke"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginTop="@dimen/commom_7dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:layout_marginBottom="@dimen/commom_7dp"
+        android:text="@string/public_agree_logoff" />
+</LinearLayout>

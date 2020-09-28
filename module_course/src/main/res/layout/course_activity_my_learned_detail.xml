@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <include layout="@layout/player_video_base" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_learn_pgr_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_50dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_homework"
+            style="@style/CourseSectionBt"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/commom_10dp"
+            android:layout_marginEnd="@dimen/commom_15dp"
+            android:text="@string/course_work"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_sections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:textSize="13sp"
+            tools:text="共0课时" />
+
+
+        <include
+            layout="@layout/course_layout_progress_base_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@id/tv_sections" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_F5F5F5" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/course_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_F5F5F5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commom_40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/cl_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/course_imageview3"
+                android:layout_width="@dimen/commom_18dp"
+                android:layout_height="@dimen/commom_18dp"
+                app:srcCompat="@drawable/course_ic_learn_comment" />
+
+            <TextView
+                android:textSize="13sp"
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/course_edit_comment"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cl_course_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/course_imageview4"
+                android:layout_width="@dimen/commom_18dp"
+                android:layout_height="@dimen/commom_18dp"
+                app:srcCompat="@drawable/course_ic_learn_detail" />
+
+            <TextView
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="课程详情" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/cl_learn_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/commom_18dp"
+                android:layout_height="@dimen/commom_18dp"
+                app:srcCompat="@drawable/course_ic_learn_qrcode" />
+
+            <TextView
+                android:textSize="13sp"
+                android:id="@+id/tv_learn_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="学习资料" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cl_remove_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_course_hide"
+                android:layout_width="@dimen/commom_23dp"
+                android:layout_height="@dimen/commom_23dp"
+                app:srcCompat="@drawable/course_ic_learn_cancel_hide" />
+
+            <TextView
+                android:textSize="13sp"
+                android:id="@+id/tv_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/course_hide_course" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

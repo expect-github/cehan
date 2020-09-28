@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/public_item_course_v3">
+
+
+    <com.nj.baijiayun.module_public.widget.CourseTitleView
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textColor="@color/public_D9000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="初中语文进阶初中语文进阶初中语文进阶初中语文进阶" />
+
+    <TextView
+
+
+        android:id="@+id/tv_course_vip"
+        android:layout_width="38dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/public_bg_shap_vip_no_top_radius"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/public_vip"
+        android:textColor="@color/public_FF262626"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <include
+        android:id="@+id/public_include3"
+        layout="@layout/public_layout_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_course_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_name" />
+
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginTop="@dimen/commom_10dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/public_include3"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="@dimen/commom_50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintEnd_toEndOf="@+id/iv_1"
+        app:layout_constraintStart_toStartOf="@+id/iv_1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_1"
+        tools:text="好老师" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintStart_toEndOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/iv_2"
+        app:layout_constraintStart_toStartOf="@+id/iv_2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_2"
+        tools:text="何新2222" />
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_2"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="@dimen/commom_50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@+id/iv_3"
+        app:layout_constraintStart_toStartOf="@+id/iv_3"
+        app:layout_constraintTop_toBottomOf="@+id/iv_3"
+        tools:text="商文海" />
+
+
+    <ImageView
+        android:id="@+id/iv_sign_up"
+        android:layout_width="58dp"
+        android:layout_height="47dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/public_ic_sign_up"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_course_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</merge>

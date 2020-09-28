@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.SettingsActivity">
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_clear_cache"
+            style="@style/PUBLIC_SETTING_ITEM"
+            android:layout_marginTop="10dp"
+            app:common_user_item_title="@string/public_clear_cache" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_account_safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            app:common_user_item_icon_visible="false"
+            app:common_user_item_title="@string/public_activity_title_set_pwd" />
+
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_register_protocol"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_login_register_protocol" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_protect_protocol"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_login_protect_protocol" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_current_version"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_activity_title_current_version" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_certifie"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_activity_title_certifie" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_supervision"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_activity_title_supervision" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_feedback"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_activity_title_feedback" />
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_about"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_activity_title_about" />
+
+
+        <com.nj.baijiayun.module_public.widget.UserItemView
+            android:id="@+id/item_view_logoff"
+            style="@style/PUBLIC_SETTING_ITEM"
+            app:common_user_item_title="@string/public_logoff" />
+
+
+        <Button
+            android:id="@+id/btn_exit_login"
+            style="@style/PublicButton"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/common_exit_login" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

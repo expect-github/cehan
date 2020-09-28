@@ -1,0 +1,11 @@
+apply plugin: 'com.android.library'
+apply from: '../build_common_android.gradle'
+dependencies {
+    api 'com.github.princekin-f:EasyFloat:1.2.8'
+    api "com.baijiayun.live:liveplayer-sdk-ui:$baijiayun.liveplayer_sdk_ui"
+    api "com.baijiayun.live:group-class-ui:$baijiayun.group_class_ui"
+//    api project(':sdk_videoplayer_ui')
+    api project(':module_common')
+    api "com.baijia.player:VideoplayerUI:$baijiayun.VideoplayerUI"
+//
+}

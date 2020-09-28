@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PriceTextView">
+        <attr name="need_mid_line" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

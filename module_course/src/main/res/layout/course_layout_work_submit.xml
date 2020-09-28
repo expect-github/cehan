@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_home_work_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rv"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_homework_name"
+            style="@style/CourseSectionTv"
+            android:ellipsize="end"
+            android:lines="1"
+            tools:text="《雅思第二节课》11" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/CourseSectionBt"
+        android:layout_marginStart="@dimen/commom_10dp"
+        android:text="@string/course_submit_bt" />
+</LinearLayout>

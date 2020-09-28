@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="262dp"
+        android:layout_height="172.5dp"
+        android:layout_marginTop="154dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/public_bg_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/commom_19dp"
+            android:includeFontPadding="false"
+            android:text="@string/course_undercarriage"
+            android:textColor="#ff666666"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_look_other"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/commom_11dp"
+        android:background="@drawable/course_bg_go_other_course"
+        android:text="@string/course_go_other_course"
+        android:textColor="#ff4d4d4d"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="403dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/public_bg_dialog_bottom"
+    android:orientation="vertical">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:paddingRight="@dimen/commom_14dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/delete_baidu" />-->
+
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/iv_close"
+        android:paddingTop="14.5dp"
+        android:paddingRight="14.5dp"
+        android:paddingLeft="@dimen/commom_8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete_baidu" />
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="优惠券"
+        android:textColor="#ff262626"
+        android:textSize="17sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/commom_19dp"
+        android:layout_marginTop="@dimen/commom_19dp"
+        android:layout_marginEnd="@dimen/commom_19dp"
+        android:layout_marginBottom="@dimen/commom_19dp" />
+
+
+</LinearLayout>

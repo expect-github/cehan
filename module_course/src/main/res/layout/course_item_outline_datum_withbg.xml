@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+    android:background="@drawable/course_bg_datum"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="@dimen/commom_10dp">
+
+    <ImageView
+        android:tint="@color/common_main_color"
+        android:id="@+id/course_imageview2"
+        android:layout_width="@dimen/commom_10dp"
+        android:layout_height="@dimen/commom_10dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/course_ic_file"/>
+
+    <TextView
+        android:id="@+id/tv_datum_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="0dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        tools:text="第一节课讲义.pdf"
+        android:textColor="@color/common_main_color"
+        android:textSize="12sp"
+        />
+</LinearLayout>

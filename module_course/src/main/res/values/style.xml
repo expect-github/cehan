@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CourseDetailStyle">
+        <item name="android:textColor">#FF8C8C8C</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="CourseDetailTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF262626</item>
+        <item name="android:textSize">@dimen/common_15sp</item>
+
+    </style>
+
+    <style name="CourseTabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <!--<item name="android:textSize">17sp</item>-->
+        <item name="android:textSize">@dimen/commom_15sp</item>
+    </style>
+    
+    <style name="CourseSectionBt">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/course_bg_section_bt</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    
+    <style name="CourseSectionTv">
+        <item name="android:background">@drawable/course_bg_datum</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/commom_23dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">5dp</item>
+    </style>
+
+    <style name="CourseAssembleStepNumber">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_width">@dimen/commom_14dp</item>
+        <item name="android:layout_height">@dimen/commom_14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/public_orange</item>
+        <item name="android:background">@drawable/course_bg_assemble_step</item>
+    </style>
+
+
+    <style name="CourseAssembleStepNumberNew">
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_width">@dimen/commom_14dp</item>
+        <item name="android:layout_height">@dimen/commom_14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/course_bg_assemble_step_new</item>
+    </style>
+
+
+    <style name="CourseAssembleStepContent">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/commom_10dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/public_FF8C8C8C</item>
+    </style>
+
+    <style name="CourseAssembleStepContentNew">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/commom_10dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CourseDetailActionText" parent="PublicTextPrice">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+</resources>

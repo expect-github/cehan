@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply from: '../build_common_android.gradle'
+apply from: '../build_androidx.gradle'
+
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$deps.junit"
+    api 'com.google.android.material:material:1.0.0'
+
+    api project(":lib_basic")
+    api project(":lib_http")
+    api "com.google.dagger:dagger:$deps.dagger2Version"
+    api "com.google.dagger:dagger-android:$deps.dagger2Version"
+    api "com.google.dagger:dagger-android-support:$deps.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$deps.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$deps.dagger2Version"
+
+    api "com.alibaba:arouter-api:$deps.arouter_api"
+    api "com.hyman:flowlayout-lib:$deps.flowlayout_lib"
+    api "com.yuyh.imgsel:library:$deps.imgsel"
+    api "com.jaeger.ninegridimageview:library:$deps.ninegridimageview"
+    api "com.github.hackware1993:MagicIndicator:$deps.MagicIndicator"
+    api "com.haibin:calendarview:$deps.calendarview"
+    api "tv.danmaku.ijk.media:ijkplayer-java:$deps.ijkplayer_java"
+    api "tv.danmaku.ijk.media:ijkplayer-armv7a:$deps.ijkplayer_armv7a"
+    api "com.nj.baijiayun:imageloader:$baijiayun.imageloader"
+    api "com.nj.baijiayun:refresh:$baijiayun.refresh"
+    api project(":lib_jsbridge")
+    api project(":lib_cachewebview")
+    api "com.nj.baijiayun:annotations:$baijiayun.annotations"
+    api ("com.nj.baijiayun:push:$baijiayun.push") {
+        exclude module :'utdid'
+    }
+
+
+
+}

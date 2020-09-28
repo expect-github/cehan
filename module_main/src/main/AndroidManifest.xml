@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nj.baijiayun.module_main">
+
+    <application>
+
+        <activity
+            android:name="com.nj.baijiayun.module_main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.nj.baijiayun.module_main.ui.SelectCourseActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.nj.baijiayun.module_main.ui.EyeCareActivity" />
+
+    </application>
+
+
+</manifest>

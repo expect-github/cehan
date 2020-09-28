@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="@dimen/commom_11dp"-->
+<!--    android:layout_marginRight="@dimen/commom_11dp"-->
+<!--    app:hl_shadowColor="#12000000"-->
+<!--    app:hl_shadowBackColor="@color/white"-->
+<!--    app:hl_cornerRadius="@dimen/commom_10dp"-->
+<!--    app:hl_shadowLimit="@dimen/commom_4dp">-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/commom_13dp"
+    android:layout_marginRight="@dimen/commom_13dp"
+    android:background="@drawable/public_bg_shadow"
+    android:minHeight="162dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="@dimen/commom_15dp">
+
+
+    <com.nj.baijiayun.module_public.widget.CourseTitleView
+        android:id="@+id/tv_course_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textColor="@color/public_D9000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="初中语文进阶初中语文进阶初中语文进阶初中语文进阶" />
+
+    <TextView
+
+        android:id="@+id/tv_course_vip"
+        android:layout_width="38dp"
+        android:layout_height="@dimen/commom_20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/public_bg_shap_vip_no_top_radius"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/public_vip"
+        android:textColor="@color/public_FF262626"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/public_include3"
+        layout="@layout/public_layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_name" />
+
+    <TextView
+        android:id="@+id/public_tv_sign_up_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/split_line"
+        app:layout_constraintTop_toBottomOf="@+id/split_line"
+        tools:text="2人已报名" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/public_price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/split_line"
+        app:layout_constraintTop_toBottomOf="@+id/split_line"
+        tools:text="4345" />
+
+    <com.nj.baijiayun.module_public.widget.PriceTextView
+        android:id="@+id/tv_price_unline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="12dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/public_FF8C8C8C"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price_discount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_price_discount"
+        tools:text="¥800.00" />
+
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginTop="@dimen/commom_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/public_include3"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/commom_50dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintStart_toEndOf="@+id/iv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        tools:text="饕餮" />
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintStart_toEndOf="@+id/tv_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/commom_50dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_2"
+        app:layout_constraintStart_toEndOf="@+id/iv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_2"
+        tools:text="何新童" />
+
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/commom_50dp"
+        android:textColor="@color/public_73000000"
+        android:textSize="@dimen/commom_hint"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_3"
+        app:layout_constraintStart_toEndOf="@+id/iv_3"
+        app:layout_constraintTop_toTopOf="@+id/iv_3"
+        tools:text="商文海商文海商文海" />
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="@dimen/commom_28dp"
+        android:layout_height="@dimen/commom_28dp"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+        app:layout_constraintStart_toEndOf="@+id/tv_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_1"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+
+
+    <include
+        android:id="@+id/split_line"
+        layout="@layout/common_layout_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/commom_1dp"
+
+
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sign_up"
+        android:layout_width="58dp"
+        android:layout_height="47dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/public_ic_sign_up"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--</com.lihang.ShadowLayout>-->

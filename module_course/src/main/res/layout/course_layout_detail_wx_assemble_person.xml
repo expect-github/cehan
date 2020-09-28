@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/tv_join_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/commom_15dp"
+        android:textColor="#ff262626"
+        android:textSize="15sp"
+        tools:text="已有234人参与拼团" />
+
+    <com.nj.baijiayun.module_course.widget.AutoVerticalScrollRecycleView
+        android:id="@+id/rv"
+        android:layout_marginTop="@dimen/commom_7dp"
+        android:layout_marginBottom="@dimen/commom_7dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+         />
+
+
+</LinearLayout>

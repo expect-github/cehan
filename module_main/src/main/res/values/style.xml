@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainUserHint" parent="PublicTextWrap">
+        <item name="android:textColor">@color/public_FFB7B7B7</item>
+        <item name="android:textSize">11sp</item>
+
+    </style>
+
+    <style name="MainUserNormal" parent="PublicTextWrap">
+
+        <item name="android:textColor">@color/design_text_normal</item>
+        <item name="android:textSize">@dimen/design_content_support</item>
+    </style>
+
+    <style name="MainUserNormal_new" parent="PublicTextWrap">
+
+        <item name="android:textColor">@color/design_text_title</item>
+        <item name="android:textSize">@dimen/design_content_support_12</item>
+    </style>
+
+    <style name="MainUserNum" parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_user_number</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MainUserNum_new" parent="PublicTextWrap">
+        <item name="android:textColor">@color/design_text_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="@dimen/commom_18dp"-->
+    <!--    android:layout_marginEnd="@dimen/commom_15dp"-->
+    <!--    android:text="课程"-->
+    <!--    android:textColor="@color/design_text_main_import"-->
+    <!--    android:textSize="@dimen/design_title_big" />-->
+
+    <style name="MainTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/commom_18dp</item>
+        <item name="android:textColor">@color/design_text_main_import</item>
+        <item name="android:textSize">@dimen/design_title_big</item>
+    </style>
+
+</resources>

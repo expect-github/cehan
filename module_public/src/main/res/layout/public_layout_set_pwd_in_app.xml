@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/commom_15dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:layout_height="55dp"
+            android:id="@+id/tv_phone"
+            style="@style/PublicPhoneEditStyle"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/commom_20dp"
+            android:layout_marginEnd="@dimen/commom_20dp"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            />
+        <include
+            android:layout_marginRight="@dimen/commom_20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/public_layout_get_code"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_height="55dp"
+        style="@style/PublicCodeEditStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_marginEnd="@dimen/commom_20dp"
+        android:hint="@string/public_code_hint"
+        />
+
+    <com.nj.baijiayun.module_common.widget.EyeEditText
+        android:id="@+id/edit_pwd"
+        android:layout_height="55dp"
+        style="@style/PublicPwdEditStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_marginEnd="@dimen/commom_20dp"
+        android:hint="@string/public_pwd_hint"
+        />
+
+    <com.nj.baijiayun.module_common.widget.EyeEditText
+        android:id="@+id/edit_pwd_again"
+        android:visibility="gone"
+        android:layout_height="55dp"
+        style="@style/PublicPwdEditStyle"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/commom_20dp"
+        android:layout_marginEnd="@dimen/commom_20dp"
+        android:hint="@string/public_pwd_again_hint"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/commom_10dp"
+        android:layout_marginLeft="@dimen/commom_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6-20位英文、数字、符号，区分大小写"
+        android:textColor="#ffb7b7b7"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:layout_marginBottom="@dimen/commom_40dp"
+        android:id="@+id/btn_confirm"
+        style="@style/PublicButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/public_submit"
+        />
+
+</LinearLayout>

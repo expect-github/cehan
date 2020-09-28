@@ -1,0 +1,31 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+android {
+    defaultConfig {
+      javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+}
+
+apply from: '../build_common_android.gradle'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$deps.junit"
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api project(':module_public')
+    annotationProcessor "com.alibaba:arouter-compiler:$deps.arouter_compiler"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$deps.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$deps.dagger2Version"
+    annotationProcessor "com.nj.baijiayun:compiler:$baijiayun.compiler"
+
+}

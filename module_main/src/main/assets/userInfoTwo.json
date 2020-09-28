@@ -1,0 +1,104 @@
+{
+  "userItemList": [
+    {
+      "group": 1,
+      "icon": "main_ic_homework",
+      "title": "我的作业",
+      "path": "",
+      "url": "/homework",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 1,
+      "icon": "main_ic_download",
+      "title": "我的下载",
+      "path": "/download/my_downloaded",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    },
+    {
+      "group": 1,
+      "icon": "main_ic_community",
+      "title": "我的社区",
+      "url": "/my-community",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    },
+    {
+      "group": 3,
+      "icon": "main_ic_coupon",
+      "title": "优惠券",
+      "url": "/coupon",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 3,
+      "icon": "main_ic_learn_card",
+      "title": "学习卡",
+      "url": "/card",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    },
+    {
+      "group": 3,
+      "icon": "main_ic_distribution",
+      "title": "分销中心",
+      "url": "/distribute",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_msg",
+      "title": "消息中心",
+      "url": "/message",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_address",
+      "title": "地址管理",
+      "url": "/address",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_set_pwd",
+      "title": "设置密码",
+      "path": "/public/set_pwd",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_protect_eyes",
+      "title": "护眼模式",
+      "path": "/main/eye_care",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_service",
+      "title": "在线客服",
+      "url": "",
+      "path": "/public/settings",
+      "needBottomLine": true,
+      "needBottomMargin": false
+    },
+    {
+      "group": 4,
+      "icon": "main_ic_settings",
+      "title": "设置",
+      "path": "/public/settings",
+      "needBottomLine": false,
+      "needBottomMargin": true
+    }
+  ]
+}
+
+

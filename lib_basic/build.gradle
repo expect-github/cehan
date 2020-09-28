@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+apply from: '../build_androidx.gradle'
+
+android {
+    compileSdkVersion androidV.compileSdkVersion
+
+
+    defaultConfig {
+        minSdkVersion androidV.minSdkVersion
+        targetSdkVersion androidV.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    compileOptions {
+        sourceCompatibility androidV.sourceCompatibility
+        targetCompatibility androidV.targetCompatibility
+    }
+
+
+}
+dependencies {
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$deps.junit"
+    api "com.tbruyelle.rxpermissions2:rxpermissions:$deps.rxpermissions"
+    api "me.yokeyword:fragmentation:$deps.fragmentation"
+    api "io.reactivex.rxjava2:rxandroid:$deps.rxandroid"
+    api "io.reactivex.rxjava2:rxjava:$deps.rxjava"
+    api "com.nj.baijiayun:logger:$baijiayun.logger"
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    api project(":lib_res")
+
+}

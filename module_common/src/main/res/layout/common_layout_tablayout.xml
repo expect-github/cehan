@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    app:tabBackground="@android:color/white"
+    app:tabGravity="center"
+    app:tabIndicatorColor="@color/common_tab_text_selected"
+    app:tabIndicatorHeight="2dp"
+    app:tabMode="scrollable"
+    app:tabSelectedTextColor="@color/common_tab_text_selected"
+    app:tabTextColor="@color/common_tab_text_unselected"
+    tools:showIn="@layout/common_activity_mult_tab"/>

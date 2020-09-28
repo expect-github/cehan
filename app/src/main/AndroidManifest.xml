@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.nj.baijiayun">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/> <!-- Optional. Required for
+
+    location feature -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    
+    <!--usesCleartextTraffic  android P 拦截了http所以需要开放-->
+    <application
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/common_network_security_config"
+        tools:replace="android:label,android:networkSecurityConfig,android:allowBackup"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/public_app_name"
+        android:name=".BjyApp"
+        android:supportsRtl="true"
+        android:theme="@style/PublicAppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+
+        <provider
+            android:name="com.nj.baijiayun.module_public.provider.AppFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/PublicAppSplash"
+            android:name="com.nj.baijiayun.module_main.SplashActivity">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="${applicationId}.wxapi.WXPayEntryActivity">
+        </activity>
+
+    </application>
+</manifest>

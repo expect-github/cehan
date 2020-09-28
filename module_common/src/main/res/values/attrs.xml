@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommonEyeEditText">
+        <attr name="common_pwd_eye_close" format="reference" />
+        <attr name="common_pwd_eye_open" format="reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CommonUserItemView">
+        <attr name="common_user_item_icon" format="reference" />
+        <attr name="common_user_item_icon_visible" format="boolean" />
+        <attr name="common_user_item_title" format="string" />
+        <attr name="common_user_item_content" format="string" />
+        <attr name="common_user_item_right_Icon_visible" format="boolean" />
+        <attr name="common_user_item_rightContentImage_visible" format="boolean" />
+        <attr name="common_user_item_line_visible" format="boolean" />
+        <attr name="common_user_item_route_path" format="string" />
+        <attr name="common_user_item_url" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="JPTabBar">
+        <attr name="TabNormalColor" format="reference|color" />
+        <attr name="TabSelectColor" format="reference|color" />
+        <attr name="TabSelectBg" format="reference|color" />
+        <attr name="TabTextSize" format="dimension|reference" />
+        <attr name="TabTypeface" format="string" />
+        <attr name="TabIconSize" format="dimension|reference" />
+        <attr name="TabIconNoTextSize" format="dimension|reference" />
+        <attr name="TabIconFilter" format="boolean" />
+        <attr name="TabMargin" format="dimension|reference" />
+        <attr name="TabAnimate" format="enum">
+            <enum name="Flip" value="0" />
+            <enum name="Rotate" value="1" />
+            <enum name="Scale" value="2" />
+            <enum name="Jump" value="3" />
+            <enum name="Scale2" value="4" />
+            <enum name="None" value="5" />
+        </attr>
+        <attr name="TabPressAnimateEnable" format="boolean" />
+        <attr name="TabPageAnimateEnable" format="boolean" />
+        <attr name="TabGradientEnable" format="boolean" />
+        <attr name="TabMiddleBottomDis" format="dimension|reference" />
+        <attr name="TabMiddleView" format="reference" />
+        <attr name="TabMiddleHMargin" format="dimension|reference" />
+        <attr name="BadgeColor" format="reference|color" />
+        <attr name="BadgePadding" format="dimension|reference" />
+        <attr name="BadgeTextSize" format="reference|dimension" />
+        <attr name="BadgeVerticalMargin" format="reference|dimension" />
+        <attr name="BadgeHorizonalMargin" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonTriangleLabelView">
+        <attr name="commonBgColor" format="color|reference" />
+        <attr name="commonLayoutDirectionIsLeft" format="boolean" />
+        <attr name="commonTvColor" format="color|reference" />
+        <attr name="commonTvSize" format="dimension|reference" />
+        <attr name="commonTvText" format="string" />
+        <attr name="commonLayoutDirectionIsTop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Common_RatingBar">
+        <!--尺寸值-->
+        <attr name="common_starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="common_starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="common_starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="common_starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="common_starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="common_starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="common_clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="common_starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="common_stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

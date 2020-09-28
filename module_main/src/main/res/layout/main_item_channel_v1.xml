@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/cl_bg">
+
+
+
+    <com.nj.baijiayun.basic.widget.RoundView
+        android:layout_marginTop="16dp"
+        android:id="@+id/roundView"
+        android:layout_width="2dp"
+        android:layout_marginLeft="@dimen/commom_15dp"
+        android:layout_height="@dimen/commom_19dp"
+        app:basic_bgRound="@color/common_main_color"
+        app:basic_radiusRound="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        style="@style/PublicTextLabel"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/commom_25dp"
+        android:textSize="@dimen/commom_17sp"
+        android:textColor="@color/design_text_title"
+        android:layout_marginTop="@dimen/commom_13dp"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="学习动态" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="6.5dp"
+        android:layout_height="@dimen/commom_11dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:src="@drawable/common_arrow_right"
+        android:tint="#FFB3B3B3"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/PublicTextMore"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_toStartOf="@id/iv_right"
+        android:text="@string/design_more"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_right"
+        app:layout_constraintEnd_toStartOf="@+id/iv_right"
+        app:layout_constraintTop_toTopOf="@+id/iv_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nj.baijiayun.module_public">
+
+    <application>
+        <activity
+            android:name=".ui.TestActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.SetPwdActivity" />
+        <activity android:name=".ui.BindPhoneActivity" />
+        <activity android:name=".ui.ForgetPwdActivity" />
+        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity android:name=".ui.ImgPreviewActivity" />
+        <activity android:name=".ui.ShareImgActivity" />
+        <activity android:name=".ui.CmbWebviewActivity" />
+        <activity android:name=".ui.CmbWebviewNewActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:scheme="ahjbaaaafa" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.logoff.LogOffProtocolActivity"
+            android:theme="@style/PublicAppWhiteBgTheme" />
+        <activity
+            android:name=".ui.logoff.LogOffConfirmActivity"
+            android:theme="@style/PublicAppWhiteBgTheme" />
+        <activity
+            android:name=".ui.MobileVerifyActivity"
+            android:theme="@style/PublicAppWhiteBgTheme" />
+
+        <activity
+            android:name=".ui.FilePreViewActivity"
+            android:theme="@style/PublicPreViewFileTheme" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/PublicAppWhiteBgTheme" />
+        <activity
+            android:name=".helper.videoplay.VideoProxyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreenTheme" -->
+        <activity
+            android:name=".temple.BaseAppWebViewActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/PublicAppTheme">
+
+        </activity>
+        <activity
+            android:name=".ui.library.PublicLibraryActivity"
+            android:theme="@style/PublicPreViewFileTheme" />
+        <!--   copy from VideoPlayActivity     -->
+        <activity
+            android:name=".helper.videoplay.VideoPlayWrapperActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/FullScreenTheme" />
+        <activity android:name=".p_set.ui.CertifyActivity" />
+        <activity android:name=".p_set.ui.SupervisionActivity" />
+    </application>
+
+</manifest>

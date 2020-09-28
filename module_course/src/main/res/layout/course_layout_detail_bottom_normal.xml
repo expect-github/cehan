@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_bottom_nomral"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:visibility="visible"
+    tools:showIn="@layout/course_activity_wx_detail_v1">
+
+    <TextView
+
+        android:id="@+id/tv_confirm"
+        style="@style/PublicButton"
+        android:layout_height="@dimen/commom_37dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/commom_15dp"
+        android:layout_marginTop="@dimen/commom_6dp"
+        android:layout_marginRight="@dimen/commom_15dp"
+        android:layout_marginBottom="@dimen/commom_6dp"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        tools:text="立即报名" />
+
+    <ImageView
+        android:id="@+id/iv_vip"
+        android:layout_width="53dp"
+        android:layout_height="@dimen/commom_37dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginTop="@dimen/commom_6dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="@dimen/commom_6dp"
+        android:src="@drawable/course_ic_vip"
+        android:visibility="visible" />
+
+</FrameLayout>
+
+
+        

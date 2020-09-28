@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/commom_15dp"
+    android:paddingRight="@dimen/commom_15dp"
+    android:paddingBottom="@dimen/commom_15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.nj.baijiayun.module_public.widget.CourseTitleView
+            android:id="@+id/tv_course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="【2019】钢铁是怎样炼成的之高考放大招" />
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_collect"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/public_ic_un_collect" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.nj.baijiayun.module_public.widget.PriceTextView
+            android:id="@+id/tv_price_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/public_price"
+            android:textSize="18sp"
+            tools:text="100" />
+
+
+        <com.nj.baijiayun.module_public.widget.PriceTextView
+            android:id="@+id/tv_price_unline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/public_FF8C8C8C"
+            android:textSize="12sp"
+            tools:text="¥800.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/course_linearlayout"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/tv_course_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_discount">
+
+        <TextView
+            android:id="@+id/tv_periods"
+            style="@style/CourseDetailStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共4课时 | 8763人已报名" />
+
+        <TextView
+            android:id="@+id/tv_sales_limit"
+            style="@style/CourseDetailStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报名上线：50人 | 剩余名额：34" />
+
+        <TextView
+            android:id="@+id/tv_sign_up_end"
+            style="@style/CourseDetailStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报名截止时间：2019.07.09 12:00" />
+
+        <TextView
+            android:id="@+id/tv_time_range"
+            style="@style/CourseDetailStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开课时间：2019.05.05 12:00 - 2019.07.09 12:00" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/CourseDetailStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开课地点：江苏省南京市软件谷科创城A座13层" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

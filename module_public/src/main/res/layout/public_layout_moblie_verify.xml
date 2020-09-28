@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="@dimen/commom_30dp"
+        android:textSize="18sp"
+        android:textColor="@color/public_FF262626"
+        android:id="@+id/tv_current_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="当前绑定的手机号" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/commom_20dp"
+        android:layout_marginTop="@dimen/commom_35dp"
+        android:layout_marginRight="@dimen/commom_20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/edit_code"
+            style="@style/PublicCodeEditStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:hint="@string/public_code_hint" />
+
+        <include
+            layout="@layout/public_layout_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginEnd="@dimen/commom_15dp"
+        android:layout_marginStart="@dimen/commom_15dp"
+        android:layout_marginTop="@dimen/commom_40dp"
+        android:id="@+id/btn_confirm"
+        style="@style/PublicButton"
+        android:text="@string/common_confirm" />
+
+</LinearLayout>
